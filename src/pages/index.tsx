@@ -102,6 +102,7 @@ const Title = styled.h1`
 const Caption = styled.p`
   font-size: 15px;
   font-style: normal;
+  font-family: "SUSE", sans-serif;
   line-height: 130%;
   text-transform: uppercase;
   color: rgba(255,255,255, 0.7);
@@ -120,6 +121,7 @@ const SmallText = styled.p`
   max-width: 280px;
   font-style: normal;
   font-size: 13px;
+  font-family: "SUSE", sans-serif;
   line-height: 130%;
   color: rgba(255, 255, 255, 0.7);
 `
