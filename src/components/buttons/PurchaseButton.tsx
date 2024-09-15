@@ -53,6 +53,7 @@ const TextWrapper = styled.div`
   display: grid;
   gap: 4px;
   text-align: start;
+  font-family: "SUSE", sans-serif;
 `
 
 const Title = styled.p`
