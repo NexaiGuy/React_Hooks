@@ -64,7 +64,7 @@ const AuthorWrapper = styled.div`
 
 const HeroWrapper = styled.div`
   display: grid;
-  max-width: 1234px;
+  
   grid-template-columns: 360px auto;
   gap: 60px;
   padding: 220px 20px 0px;
