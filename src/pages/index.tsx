@@ -42,7 +42,7 @@ export default IndexPage
 
 const Wrapper = styled.div`
   background: linear-gradient(200.44deg, #4316db 13.57%, #9076e7);
-  overflow: hidden;
+  
 `
 
 const TextWrapper = styled.div`
@@ -72,7 +72,7 @@ const HeroWrapper = styled.div`
   margin: 0 auto;
 
   .courseCard {
-    
+    margin-top: 74px;
   }
 
   @media (max-width: 780px) {
