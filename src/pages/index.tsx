@@ -72,7 +72,7 @@ const HeroWrapper = styled.div`
   margin: 0 auto;
 
   .courseCard {
-    margin-top: 74px;
+    
   }
 
   @media (max-width: 780px) {
