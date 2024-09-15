@@ -98,7 +98,7 @@ const Title = styled.h1`
   font-weight: weight;
   font-style: normal;
   `
-
+ 
 const Caption = styled.p`
   font-size: 15px;
   font-style: normal;
