@@ -42,7 +42,7 @@ export default IndexPage
 
 const Wrapper = styled.div`
   background: linear-gradient(200.44deg, #4316db 13.57%, #9076e7);
-  
+  overflow: hidden;
 `
 
 const TextWrapper = styled.div`
