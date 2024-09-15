@@ -109,7 +109,7 @@ const Caption = styled.p`
 `
 
 const Description = styled.p`
-  
+  font-family: "SUSE", sans-serif;
 `
 
 const AuthorImage = styled.img`
