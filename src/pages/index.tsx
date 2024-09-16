@@ -23,7 +23,7 @@ const IndexPage = () => {
         <TextWrapper>
           <Logo className="animate__animated animate__lightSpeedInRight illustration" src={logo} alt="icon" />
           <Title className="animate__animated animate__lightSpeedInRight illustration">Portfolio <br /> Kevin Blancaflor</Title>
-          <Caption>Check Out my Websites, Skills & Projects</Caption>
+          <Caption>Check Out my Websites | Skills | Projects</Caption>
           <Description>Welcome on the overview of a guy with a grinding personality & perception.</Description>
           <AuthorWrapper>
             <AuthorImage src={Meng} alt="author image" />
