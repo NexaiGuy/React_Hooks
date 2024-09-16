@@ -1,60 +1,52 @@
-import React from "react"
-import styled from "styled-components"
-import Credit from "/src/images/icons/credit.svg"
-import IconRing from "/src/images/icons/icon-ring.svg"
-
+import React from "react";
+import styled from "styled-components";
+import Credit from "/src/images/icons/credit.svg";
+import IconRing from "/src/images/icons/icon-ring.svg";
 
 function PurchaseButton() {
+  const handleClick = () => {
+    const clickProjects = document.getElementById('click-projects');
+    clickProjects.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <Wrapper>
+    <Wrapper onClick={handleClick}>
       <IconWrapper>
-        <Ring src={IconRing} alt="Icon Ring"/>
-        <Icon src={Credit} alt="Credit Icon"/>
+        <Ring src={IconRing} alt="Icon Ring" />
+        <Icon src={Credit} alt="Credit Icon" />
       </IconWrapper>
       <TextWrapper>
-        <Title>Get Pro Access</Title>
-        <Subtitle>$19 per month</Subtitle>
+        <Title>Go Next Level</Title>
+        <Subtitle>One Click Away.</Subtitle>
       </TextWrapper>
     </Wrapper>
-  )
+  );
 }
 
-export default PurchaseButton
+export default PurchaseButton;
 
 const Wrapper = styled.div`
   width: 280px;
   height: 77px;
   padding: 12px;
   background: linear-gradient(180deg, #ffffff 0%, #d9dfff 100%);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1),
-    0px 20px 40px rgba(23, 0, 102, 0.2),
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 20px 40px rgba(23, 0, 102, 0.2),
     inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   display: grid;
   grid-template-columns: 53px auto;
   align-items: center;
   gap: 20px;
-
-  *,
-  & {
-    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-  }
-
-  :hover {
-    transform: translateY(-3px);
-
-    .icon {
-      transform: scale(1.2);
-    }
-  }
-`
+  transition: transform 0.3s ease; /* Smooth transition for hover effects */
+  cursor: pointer; /* Add cursor pointer to indicate it's a clickable element */
+`;
 
 const TextWrapper = styled.div`
   display: grid;
-  gap: 4px;
+  gap: 8px;
   text-align: start;
   font-family: "SUSE", sans-serif;
-`
+`;
 
 const Title = styled.p`
   font-style: normal;
@@ -62,7 +54,7 @@ const Title = styled.p`
   font-size: 15px;
   color: black;
   text-transform: uppercase;
-`
+`;
 
 const Subtitle = styled.p`
   font-style: normal;
@@ -70,22 +62,23 @@ const Subtitle = styled.p`
   font-size: 13px;
   color: black;
   opacity: 0.7;
-`
+`;
 
 const Icon = styled.img`
   width: 29px;
   height: 29px;
-`
+`;
 
 const Ring = styled.img`
   position: absolute;
   top: -15px;
   left: -16px;
+  transition: transform 0.3s ease;
 
   ${Wrapper}:hover & {
-    transform: rotate(30deg) scale(1.2) translate(1px, 1px);
+    transform: rotate(30deg) scale(1.1) translate(1px, 1px);
   }
-`
+`;
 
 const IconWrapper = styled.div`
   width: 45px;
@@ -97,8 +90,9 @@ const IconWrapper = styled.div`
   align-content: center;
   justify-self: center;
   position: relative;
+  transition: filter 0.3s ease; /* Smoother transition on hover */
 
   ${Wrapper}:hover & {
-    filter: hue-rotate(10deg) brightness(150%) saturate(120%);
+    filter: brightness(120%) saturate(120%);
   }
-`
+`;

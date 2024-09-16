@@ -15,7 +15,7 @@ export default function ClickProjects() {
       <div className="mockup2">
         <img src={m2} alt="Mockup 2" />
       </div>
-      <div className="mockup3">
+      <div className="mockup3" id="mock">
         <img src={m3} alt="Mockup 3" />
       </div>
       <div className="mockup4">

@@ -6,57 +6,59 @@ import { useWindowSize } from "react-use";
 import "../components/layout.css"
 import 'animate.css';
 
-import PurchaseButton from "../components/buttons/PurchaseButton";
-import CourseCard from "../components/cards/CourseCard"
+import CourseCard from "../components/cards/CourseCard";
 import FlutterBuild from "../components/builds/FlutterBuild";
-import GridSection from "../components/sections/GridSection"
-import ClickProjects from "../components/sections/ClickProjects"
-import GridProjects from "../components/sections/GridProjects"
+import GridSection from "../components/sections/GridSection";
+import ClickProjects from "../components/sections/ClickProjects";
+import GridProjects from "../components/sections/GridProjects";
+import PurchaseButton from "../components/buttons/PurchaseButton";
 
 const IndexPage = () => {
-  const { width } = useWindowSize()
+  const { width } = useWindowSize();
 
   return (
     <Wrapper>
       <HeroWrapper>
         <CourseCard />
-         <TextWrapper>
+        <TextWrapper>
           <Logo className="animate__animated animate__lightSpeedInRight illustration" src={logo} alt="icon" />
-            <Title className="animate__animated animate__lightSpeedInRight illustration">Build a web app with React Hooks</Title>
-            <Caption>20 sections - 3hours of videos</Caption>
-            <Description>Learn how we build the new DesignCode site with React Hooks</Description>
-            <AuthorWrapper>
-              <AuthorImage src={Meng} alt="author image" />
-              <Caption>Taught by Meng To</Caption>
-            </AuthorWrapper>
-            <PurchaseButton />
-          <SmallText>Purchase includes access to 30 courses. Over 80 hours of content, including 12 hours for SwiftUI, iOS 13 and iOS 14.</SmallText>
-         </TextWrapper>
+          <Title className="animate__animated animate__lightSpeedInRight illustration">Portfolio <br /> Kevin Blancaflor</Title>
+          <Caption></Caption>
+          <Description>Check Out my Websites, Skills & Projects</Description>
+          <AuthorWrapper>
+            <AuthorImage src={Meng} alt="author image" />
+            <Caption>Brought by Kevin Blancaflor</Caption>
+          </AuthorWrapper>
+          <PurchaseButton />
+          <SmallText>Small introduction about a "Web Developer" from Ghent | Belgium. <br /> Organisations: ⚜ | Nex AI™ | - | Bikera™ | ⚜</SmallText>
+        </TextWrapper>
       </HeroWrapper>
       <ContentWrapper>
-      <ClickProjects />
+        <div id="click-projects">
+          <ClickProjects />
+        </div>
       </ContentWrapper>
-      <Divider/>
+      <Divider />
       <GridSection />
       <GridProjects />
       <FlutterWrapper width={width}>
         <FlutterBuild />
       </FlutterWrapper>
     </Wrapper>
-  ) 
-} 
+  );
+};
 
-export default IndexPage
+export default IndexPage;
 
 const Wrapper = styled.div`
   background: linear-gradient(200.44deg, #4316db 13.57%, #9076e7);
   overflow: hidden;
   font-family: "SUSE", sans-serif;
-`
+`;
 
 const ContentWrapper = styled.div`
   overflow: hidden;
-`
+`;
 
 const TextWrapper = styled.div`
   position: relative;
@@ -74,13 +76,13 @@ const TextWrapper = styled.div`
     justify-items: center;
     text-align: center;
   }
-`
+`;
 
 const AuthorWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 16px;
-`
+`;
 
 const HeroWrapper = styled.div`
   display: grid;
@@ -96,15 +98,15 @@ const HeroWrapper = styled.div`
   }
 
   @media (max-width: 780px) {
-  grid-template-columns: 1fr;
-  justify-items: center;
-}
-`
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+`;
 
 const Logo = styled.img`
   width: 60px;
   height: 60px;
-`
+`;
 
 const Title = styled.h1`
   max-width: 500px;
@@ -117,24 +119,23 @@ const Title = styled.h1`
   font-weight: weight;
   font-style: normal;
   animation-duration: 1.4s; /* don't forget to set a duration! */
+`;
 
-  `
- 
 const Caption = styled.p`
   font-size: 15px;
   font-style: normal;
   line-height: 130%;
   text-transform: uppercase;
   color: rgba(255,255,255, 0.7);
-`
+`;
 
 const Description = styled.p`
-`
+`;
 
 const AuthorImage = styled.img`
   width: 32px;
   height: 32px;
-`
+`;
 
 const SmallText = styled.p`
   max-width: 280px;
@@ -143,7 +144,7 @@ const SmallText = styled.p`
   font-family: "SUSE", sans-serif;
   line-height: 130%;
   color: rgba(255, 255, 255, 0.7);
-`
+`;
 
 const FlutterWrapper = styled.div`
   margin: 100px auto;
@@ -152,11 +153,11 @@ const FlutterWrapper = styled.div`
     transform-origin: top left;
     transform: scale(${props => props.width / 1440});
   }
-`
+`;
 
 const Divider = styled.div`
   width: 300px;
   height: 0.5px;
   background: rgba(255, 255, 255, 0.3);
   margin: 60px auto 32px;
-`
+`;
