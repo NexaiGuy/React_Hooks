@@ -3,6 +3,7 @@ import styled from "styled-components";
 import logo from "../static/images/logos/logo.svg";
 import Meng from "../static/avatars/Meng.png";
 import { useWindowSize } from "react-use";
+import "../components/layout.css"
 
 import PurchaseButton from "../components/buttons/PurchaseButton";
 import CourseCard from "../components/cards/CourseCard"
@@ -64,7 +65,7 @@ const AuthorWrapper = styled.div`
 
 const HeroWrapper = styled.div`
   display: grid;
-  
+  max-width: 1234px;
   grid-template-columns: 360px auto;
   gap: 60px;
   padding: 220px 20px 0px;
