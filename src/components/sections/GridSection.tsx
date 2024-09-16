@@ -8,7 +8,7 @@ function GridSection() {
     return <Wrapper>
         <Title>S K I L L S</Title>
         <Description>
-            All techniques are explained step-by-step, in a beginner-friendly way so that you can easily follow in a cohesive way.
+            All skills are explained step-by-step, in a beginner-friendly way so that you can easily follow in a cohesive way.
         </Description>
         <Grid>
           {sections.map((section, index) => (
