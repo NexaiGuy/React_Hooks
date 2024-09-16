@@ -106,7 +106,7 @@ const Wrapper = styled.div`
     width: 399.95px;
     height: 273.84px;
     flex-shrink: 0;
-    top: 480.52px;
+    top: 350.52px;
     left: 981px;
     display: inline-flex;
     padding: 13.692px;
