@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import logo from "../static/images/logos/logo.svg";
-import Meng from "../static/avatars/Meng.png";
+import Meng from "../static/avatars/Meng.svg";
 import { useWindowSize } from "react-use";
 import "../components/layout.css"
 import 'animate.css';
@@ -23,11 +23,11 @@ const IndexPage = () => {
         <TextWrapper>
           <Logo className="animate__animated animate__lightSpeedInRight illustration" src={logo} alt="icon" />
           <Title className="animate__animated animate__lightSpeedInRight illustration">Portfolio <br /> Kevin Blancaflor</Title>
-          <Caption></Caption>
-          <Description>Check Out my Websites, Skills & Projects</Description>
+          <Caption>Check Out my Websites, Skills & Projects</Caption>
+          <Description>Welcome on the overview of a guy with a grinding personality & perception.</Description>
           <AuthorWrapper>
             <AuthorImage src={Meng} alt="author image" />
-            <Caption>Brought by Kevin Blancaflor</Caption>
+            <Caption>Brought to you by ( Nex AI )</Caption>
           </AuthorWrapper>
           <PurchaseButton />
           <SmallText>Small introduction about a "Web Developer" from Ghent | Belgium. <br /> Organisations: ⚜ | Nex AI™ | - | Bikera™ | ⚜</SmallText>
