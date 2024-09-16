@@ -4,12 +4,14 @@ import logo from "../static/images/logos/logo.svg";
 import Meng from "../static/avatars/Meng.png";
 import { useWindowSize } from "react-use";
 import "../components/layout.css"
+import 'animate.css';
 
 import PurchaseButton from "../components/buttons/PurchaseButton";
 import CourseCard from "../components/cards/CourseCard"
 import FlutterBuild from "../components/builds/FlutterBuild";
 import GridSection from "../components/sections/GridSection"
 import ClickProjects from "../components/sections/ClickProjects"
+import GridProjects from "../components/sections/GridProjects"
 
 const IndexPage = () => {
   const { width } = useWindowSize()
@@ -20,7 +22,7 @@ const IndexPage = () => {
         <CourseCard />
          <TextWrapper>
           <Logo src={logo} alt="icon" />
-            <Title>Build a web app with React Hooks</Title>
+            <Title className="animate__animated animate__lightSpeedInRight illustration">Build a web app with React Hooks</Title>
             <Caption>20 sections - 3hours of videos</Caption>
             <Description>Learn how we build the new DesignCode site with React Hooks</Description>
             <AuthorWrapper>
@@ -36,6 +38,7 @@ const IndexPage = () => {
       </ContentWrapper>
       <Divider/>
       <GridSection />
+      <GridProjects />
       <FlutterWrapper width={width}>
         <FlutterBuild />
       </FlutterWrapper>
@@ -59,6 +62,13 @@ const TextWrapper = styled.div`
   position: relative;
   display: grid;
   gap: 20px;
+
+  transition: transform 0.5s ease; /* Smooth transition for the hover effect */
+  transform-style: preserve-3d; /* Preserve 3D transformation on hover */
+  
+  &:hover {
+    transform: rotateY(11deg); /* 3D Rotation on hover */
+  }
 
   @media (max-width) {
     justify-items: center;
@@ -106,6 +116,8 @@ const Title = styled.h1`
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
+  animation-duration: 1.4s; /* don't forget to set a duration! */
+
   `
  
 const Caption = styled.p`
