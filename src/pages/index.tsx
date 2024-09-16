@@ -9,6 +9,7 @@ import PurchaseButton from "../components/buttons/PurchaseButton";
 import CourseCard from "../components/cards/CourseCard"
 import FlutterBuild from "../components/builds/FlutterBuild";
 import GridSection from "../components/sections/GridSection"
+import ClickProjects from "../components/sections/ClickProjects"
 
 const IndexPage = () => {
   const { width } = useWindowSize()
@@ -30,6 +31,9 @@ const IndexPage = () => {
           <SmallText>Purchase includes access to 30 courses. Over 80 hours of content, including 12 hours for SwiftUI, iOS 13 and iOS 14.</SmallText>
          </TextWrapper>
       </HeroWrapper>
+      <ContentWrapper>
+      <ClickProjects />
+      </ContentWrapper>
       <Divider/>
       <GridSection />
       <FlutterWrapper width={width}>
@@ -45,6 +49,10 @@ const Wrapper = styled.div`
   background: linear-gradient(200.44deg, #4316db 13.57%, #9076e7);
   overflow: hidden;
   font-family: "SUSE", sans-serif;
+`
+
+const ContentWrapper = styled.div`
+  overflow: hidden;
 `
 
 const TextWrapper = styled.div`

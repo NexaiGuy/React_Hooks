@@ -9,10 +9,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Portfolio - Kevin Blancaflor - Nex AI™`,
+    description: `Location: Ghent, Belgium, Europe About: I’m a web and mobile app developer based in Ghent, Belgium, specializing in cutting-edge technologies like React.js, React Native, TypeScript, and Next.js. With a passion for crafting scalable and user-centric applications, I combine the power of JavaScript with the flexibility of these frameworks to deliver seamless, performant experiences. Additionally, I’m diving deep into the world of Artificial Intelligence, where I integrate intelligent systems into modern digital solutions, exploring the boundaries of what's possible in today’s tech landscape.`,
+    author: `@nexai`,
+    siteUrl: `https://portfolionexai.netlify.app`,
   },
   plugins: [
     `gatsby-plugin-image`,

@@ -34,6 +34,7 @@ const Wrapper = styled.div`
   text-align: center;
   gap: 12px;
   padding: 0 20px;
+  padding-bottom: 120px;
   font-family: "SUSE", sans-serif;
 `
 const Title = styled.p`
@@ -42,7 +43,6 @@ const Title = styled.p`
   line-height: 130%;
   text-transform;
   color: #ffffff;
-
 `
 const Description = styled.p`
   max-width: 460ox;
