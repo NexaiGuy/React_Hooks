@@ -34,6 +34,7 @@ const Wrapper = styled.div`
   text-align: center;
   gap: 12px;
   padding: 0 20px;
+  font-family: "SUSE", sans-serif;
 `
 const Title = styled.p`
   font-style: normal;

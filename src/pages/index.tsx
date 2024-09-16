@@ -44,6 +44,7 @@ export default IndexPage
 const Wrapper = styled.div`
   background: linear-gradient(200.44deg, #4316db 13.57%, #9076e7);
   overflow: hidden;
+  font-family: "SUSE", sans-serif;
 `
 
 const TextWrapper = styled.div`
@@ -94,7 +95,6 @@ const Title = styled.h1`
   color: #ffffff;
   mix-blend-mode: normal;
   text-shadow: 0px 20px 40px rgba(0,0,0, 0.3);
-  font-family: "SUSE", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
@@ -103,14 +103,12 @@ const Title = styled.h1`
 const Caption = styled.p`
   font-size: 15px;
   font-style: normal;
-  font-family: "SUSE", sans-serif;
   line-height: 130%;
   text-transform: uppercase;
   color: rgba(255,255,255, 0.7);
 `
 
 const Description = styled.p`
-  font-family: "SUSE", sans-serif;
 `
 
 const AuthorImage = styled.img`
