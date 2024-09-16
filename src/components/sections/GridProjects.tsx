@@ -6,7 +6,7 @@ import { sections } from "../data/sectionProjects"
 
 function GridProjects() {
     return <Wrapper>
-        <Title>20 topics</Title>
+        <Title>P R O J E C T S</Title>
         <Description>
             All techniques are explained step-by-step, in a beginner-friendly way so that you can easily follow in a cohesive way.
         </Description>

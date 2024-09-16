@@ -6,7 +6,7 @@ import { sections } from "../data/sectionData"
 
 function GridSection() {
     return <Wrapper>
-        <Title>20 topics</Title>
+        <Title>S K I L L S</Title>
         <Description>
             All techniques are explained step-by-step, in a beginner-friendly way so that you can easily follow in a cohesive way.
         </Description>

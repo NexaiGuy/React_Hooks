@@ -21,7 +21,7 @@ const IndexPage = () => {
       <HeroWrapper>
         <CourseCard />
          <TextWrapper>
-          <Logo src={logo} alt="icon" />
+          <Logo className="animate__animated animate__lightSpeedInRight illustration" src={logo} alt="icon" />
             <Title className="animate__animated animate__lightSpeedInRight illustration">Build a web app with React Hooks</Title>
             <Caption>20 sections - 3hours of videos</Caption>
             <Description>Learn how we build the new DesignCode site with React Hooks</Description>

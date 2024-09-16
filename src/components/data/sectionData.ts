@@ -1,38 +1,50 @@
 export const sections = [
-    {
-      title: "Intro to React Hooks",
-      description:
-        "An overview of React Hooks and the frameworks you can use to build your React application blazingly fast",
-      duration: "16:00",
-    },
-    {
-      title: "Create your first React app",
-      description:
-        "Create your first React project from the Terminal and save it on your local computer",
-      duration: "20:00",
-    },
-    {
-      title: "React Component",
-      description: "Create your first JSX component using React",
-      duration: "18:00",
-    },
-    {
-      title: "Styling in React",
-      description:
-        "How to style your React components using inline styling, separate stylesheets or styled-components",
-      duration: "08:00",
-    },
-    {
-      title: "Styles and Props",
-      description:
-        "Render different styles depending on different properties passed to your component",
-      duration: "10:00",
-    },
-    {
-      title: "Understanding Hooks",
-      description:
-        "Learn about the basics of React Hooks, which introduced at React Conf 2018",
-      duration: "15:00",
-    },
-  ]
-  
+  {
+    title: "Intro to React",
+    description:
+      "Get familiar with the fundamentals of React and how to build component-based applications efficiently.",
+    duration: "2017",
+  },
+  {
+    title: "React Native: Building Mobile Apps",
+    description:
+      "Learn the basics of React Native and how to create cross-platform mobile applications using shared React code.",
+    duration: "2021",
+  },
+  {
+    title: "Mastering TypeScript",
+    description:
+      "Discover the power of TypeScript and how it enhances your React development with strong typing and better tooling.",
+    duration: "2022",
+  },
+  {
+    title: "Next.js: Server-Side Rendering and Static Generation",
+    description:
+      "Understand how to use Next.js for server-side rendering and static site generation to optimize performance.",
+    duration: "2023",
+  },
+  {
+    title: "State Management in React",
+    description:
+      "Learn how to manage state effectively in React applications using Context API and third-party libraries like Redux.",
+    duration: "2019",
+  },
+  {
+    title: "React Native: Navigating Your App",
+    description:
+      "Dive into navigation within React Native, using tools like React Navigation to create seamless user experiences.",
+    duration: "2019",
+  },
+  {
+    title: "Advanced TypeScript Features",
+    description:
+      "Explore advanced TypeScript features, including generics, utility types, and type inference, to write more flexible code.",
+    duration: "2023",
+  },
+  {
+    title: "Deploying Next.js Applications",
+    description:
+      "Learn how to deploy your Next.js applications with popular hosting solutions like Vercel, ensuring fast and reliable performance.",
+    duration: "2023",
+  },
+];
