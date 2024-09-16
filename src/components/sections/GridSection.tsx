@@ -33,8 +33,8 @@ const Wrapper = styled.div`
   margin: 0 auto;
   text-align: center;
   gap: 12px;
-  padding: 0 20px;
-  padding-bottom: 120px;
+  padding: 180px 20px;
+  padding-bottom: 268px;
   font-family: "SUSE", sans-serif;
 `
 const Title = styled.p`

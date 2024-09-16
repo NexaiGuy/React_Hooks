@@ -32,7 +32,7 @@ const Wrapper = styled.div`
   position: relative;
   margin: 54px auto;
   padding: 200px 30px;
-  padding-bottom: 630px;
+  padding-bottom: 420px;
   display: grid;
   grid-template-columns: 270px auto;
   perspective: 5000;
