@@ -103,10 +103,10 @@ const Wrapper = styled.div`
 
   .mockup4 {
     position: absolute;
-    width: 398.95px;
+    width: 399.95px;
     height: 273.84px;
     flex-shrink: 0;
-    top: 427.52px;
+    top: 480.52px;
     left: 981px;
     display: inline-flex;
     padding: 13.692px;
@@ -121,7 +121,7 @@ const Wrapper = styled.div`
   .mockup5 {
     position: absolute;
     width: 412px;
-    height: 274px;
+    height: 254px;
     left: 754px;
     top: 428px;
     background: rgba(39, 20, 62, 0.2);
