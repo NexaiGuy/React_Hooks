@@ -193,7 +193,7 @@ const Divider2 = styled.div`
   height: 0.5px;
   background: rgba(255, 255, 255, 0.3);
   margin: 80px auto 32px;
-  margin-bottom: 150px;
+  margin-bottom: 137px;
 `;
 const Divider3 = styled.div`
   width: 300px;

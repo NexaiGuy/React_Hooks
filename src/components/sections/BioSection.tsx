@@ -99,9 +99,8 @@ const Expertise = styled.div`
 `
 
 const Description = styled.div`
-  font-size: 20px;
+  font-size: 19px;
   font-style: italic;
-  font-weight: bold;
   line-height: 28px;
   padding-bottom: 30px;
 `
