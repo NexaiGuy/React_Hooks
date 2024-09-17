@@ -138,11 +138,17 @@ const Title = styled.h1`
   line-height: 72px;
   color: #ffffff;
   mix-blend-mode: normal;
-  text-shadow: 0px 20px 40px rgba(0,0,0, 0.3);
+  text-shadow: 0px 20px 40px rgba(0,0,0, 0.1);
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
   animation-duration: 1.4s; /* don't forget to set a duration! */
+  text-shadow: 
+    0px 1px 3px rgba(0, 0, 0, 0.1),    /* Small external shadow */
+    0px 20px 40px rgba(146,207,218, 0.3), /* Larger glowing shadow for a stronger glow */
+    0px 0px 10px rgba(255, 255, 255, 0), /* Stronger white highlight for shine */
+    0px 0px 20px rgba(146,207,218, 0.1), /* Additional white layer for more shine */
+    0px 0px 30px rgba(23, 0, 102, 0.2); /* Final large purple shadow for soft glow */
 `;
 
 const Caption = styled.p`
