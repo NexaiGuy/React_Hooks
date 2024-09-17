@@ -1,50 +1,50 @@
 export const sections = [
   {
-    title: "Intro to React",
+    title: "React",
     description:
-      "Get familiar with the fundamentals of React and how to build component-based applications efficiently.",
+      "Deep understanding of React and component-based development for building dynamic and efficient web applications.",
     duration: "2017",
   },
   {
-    title: "React Native: Building Mobile Apps",
+    title: "React Native",
     description:
-      "Learn the basics of React Native and how to create cross-platform mobile applications using shared React code.",
+      "Proficient in React Native for building cross-platform mobile applications with shared React code for both iOS and Android.",
     duration: "2021",
   },
   {
-    title: "Mastering TypeScript",
+    title: "TypeScript",
     description:
-      "Discover the power of TypeScript and how it enhances your React development with strong typing and better tooling.",
+      "Mastered TypeScript for writing robust, strongly-typed code in both React and React Native, improving tooling and scalability.",
     duration: "2022",
   },
   {
-    title: "Next.js: Server-Side Rendering and Static Generation",
+    title: "Next.js",
     description:
-      "Understand how to use Next.js for server-side rendering and static site generation to optimize performance.",
+      "Expertise in using Next.js for server-side rendering and static site generation, optimizing performance for web applications.",
     duration: "2023",
   },
   {
-    title: "State Management in React",
+    title: "State Management",
     description:
-      "Learn how to manage state effectively in React applications using Context API and third-party libraries like Redux.",
+      "Experienced in managing complex state in React applications using Context API and Redux for efficient data flow and management.",
     duration: "2019",
   },
   {
-    title: "React Native: Navigating Your App",
+    title: "React Native Navigation",
     description:
-      "Dive into navigation within React Native, using tools like React Navigation to create seamless user experiences.",
+      "Skilled in using React Navigation to handle seamless navigation flows within mobile applications, enhancing user experience.",
     duration: "2019",
   },
   {
-    title: "Advanced TypeScript Features",
+    title: "Advanced TypeScript",
     description:
-      "Explore advanced TypeScript features, including generics, utility types, and type inference, to write more flexible code.",
+      "Proficient in advanced TypeScript features like generics, utility types, and type inference, ensuring flexibility and code reusability.",
     duration: "2023",
   },
   {
-    title: "Deploying Next.js Applications",
+    title: "Next.js Deployment",
     description:
-      "Learn how to deploy your Next.js applications with popular hosting solutions like Vercel, ensuring fast and reliable performance.",
+      "Capable of deploying Next.js applications using platforms like Vercel, ensuring fast and reliable performance.",
     duration: "2023",
   },
 ];

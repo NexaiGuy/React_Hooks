@@ -8,7 +8,7 @@ function GridSection() {
     return <Wrapper>
         <Title>S K I L L S</Title>
         <Description>
-            All skills are explained step-by-step, in a beginner-friendly way so that you can easily follow in a cohesive way.
+            All my skills are explained step-by-step, in a way so that you can easily follow.
         </Description>
         <Grid>
           {sections.map((section, index) => (
@@ -39,14 +39,15 @@ const Wrapper = styled.div`
 `
 const Title = styled.p`
   font-style: normal;
-  font-size: 15px;
+  font-size: 27px;
+  font-weight: bold;
   line-height: 130%;
   text-transform;
   color: #ffffff;
 `
 const Description = styled.p`
   max-width: 460ox;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 130%;
   color: rgba(255, 255, 255, 0.7);
   margin: 0 auto;

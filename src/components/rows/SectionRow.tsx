@@ -63,7 +63,7 @@ const Title = styled.div`
   max-width: 180px;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 18px;
   color: #3913b8;
 `
@@ -79,7 +79,7 @@ const ProgressBar = styled.div`
 const Description = styled.div`
   font-style: normal;
   font-weight: normal;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 16px;
   color: #192150;
 `

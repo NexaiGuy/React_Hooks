@@ -30,7 +30,7 @@ const IndexPage = () => {
             <Caption>Brought to you by ( Nex AI )</Caption>
           </AuthorWrapper>
           <PurchaseButton />
-          <SmallText>Small introduction about a "Web Developer" from Ghent | Belgium. <br /> Organisations: ⚜ | Nex AI™ | - | Bikera™ | ⚜</SmallText>
+          <SmallText>Small introduction about a Web Developer from Ghent | Belgium. <br /> Founder of:  | ⚜ Nex AI™ ⚜ | - | ⚜ Bikera™ ⚜ |</SmallText>
         </TextWrapper>
       </HeroWrapper>
       <ContentWrapper>
