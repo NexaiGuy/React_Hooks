@@ -32,7 +32,7 @@ const Wrapper = styled.div`
   position: relative;
   margin: 54px auto;
   padding: 200px 30px;
-  padding-bottom: 420px;
+  padding-bottom: 520px;
   display: grid;
   grid-template-columns: 270px auto;
   perspective: 5000;
@@ -83,8 +83,7 @@ const Wrapper = styled.div`
       #9076e7 54.49%,
       #a2eeff 100.01%
     );
-    box-shadow: 0px 8.191px 16.382px 0px rgba(0, 0, 0, 0.1),
-      0px 16.382px 32.765px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 16.388px 32.776px 0px rgba(99, 30, 187, 0.5);
     backdrop-filter: blur(10.921px);
   }
 
@@ -99,6 +98,7 @@ const Wrapper = styled.div`
     border: 0.342px solid rgba(255, 255, 255, 0.2);
     background: rgba(23, 12, 61, 0.5);
     backdrop-filter: blur(13.692px);
+    box-shadow: 0px 16.388px 32.776px 0px rgba(99, 30, 187, 0.5);
   }
 
   .mockup4 {
@@ -106,8 +106,8 @@ const Wrapper = styled.div`
     width: 399.95px;
     height: 273.84px;
     flex-shrink: 0;
-    top: 350.52px;
-    left: 981px;
+    top: 440.52px;
+    left: 1081px;
     display: inline-flex;
     padding: 13.692px;
     align-items: flex-start;

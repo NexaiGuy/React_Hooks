@@ -57,7 +57,7 @@ const IndexPage = () => {
 export default IndexPage;
 
 const Wrapper = styled.div`
-  background: linear-gradient(180.44deg, #0C0D31	 25.57%, #000000, #2DD3A6 81%	);
+  background: linear-gradient(180.44deg, #0C0D31	 25.57%, #000000);
   overflow: hidden;
   font-family: "SUSE", sans-serif;
 `;
