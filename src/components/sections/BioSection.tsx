@@ -39,7 +39,7 @@ export default function BioSection() {
             <List2>
               <ul>
                 <li>Nex AI: AI Newsletter and social media marketing automation.</li>
-                <li>Bikera: Developing Digital Systems for Bike Lending.</li>
+                <li>Bikera: Developing Digital Systems with Cryptocurrencies for Bike Lending.</li>
                 <li>Unreal Engine 5 (UE5) & After Effects expertise.</li>
                 <li>AI Smartphone App (React Native): Full-stack development with scalable back-end infrastructure.</li>
               </ul>
@@ -60,7 +60,7 @@ export default function BioSection() {
 const Wrapper = styled.div`
   position: relative;
   display: grid;
-  max-width: 1900px;
+  max-width: 1000px;
   height: 1600px;
   margin: 0 auto;
   text-align: center;
@@ -74,9 +74,18 @@ const Title = styled.div`
   font-size: 27px;
   font-weight: bold;
   line-height: 130%;
-  text-transform;
+  text-transform: uppercase;
   color: #ffffff;
-  padding-bottom: 60px;
+  margin-bottom: 20px;
+  padding: 10px; /* Add padding to ensure space inside the border */
+  margin-bottom: 40px;
+  /* Adding a border with gradient and transparency */
+  border: 3px solid transparent;
+  border-image: linear-gradient(90deg, rgba(71, 28, 171, 0.8), rgba(187, 86, 112, 0.8)) 1;
+  border-radius: 8px; /* Slightly rounded corners for a smooth look */
+
+  /* Optional: background color to enhance contrast with the border */
+  background-color: rgba(23, 0, 102, 0.2);
 `
 
 const Bio = styled.div`
@@ -86,7 +95,17 @@ const Bio = styled.div`
   color: #ffffff;
   margin: 0 auto;
   text-align: start;
-`
+  padding: 20px; /* Padding for space inside the border */
+
+  /* Adding a border with a stylish gradient */
+  border: 3px solid transparent;
+  border-image: linear-gradient(180deg, rgba(71, 28, 171, 0.8), rgba(187, 86, 112, 0.8)) 1;
+  border-radius: 12px; /* Rounded corners for a smooth, elegant look */
+
+  /* Optional: Adding a subtle background to highlight the border */
+  background-color: rgba(23, 0, 102, 0.15);
+`;
+
 
 const Name = styled.h1`
   font-size: 33px;
@@ -99,21 +118,21 @@ const Expertise = styled.div`
 `
 
 const Description = styled.div`
-  font-size: 19px;
+  font-size: 17px;
   font-style: italic;
   line-height: 28px;
   padding-bottom: 30px;
 `
 
 const Text = styled.p`
-  font-size: 18px;
+  font-size: 16px;
   font-style: italic;
   font-weight: bold;
   line-height: 50px;
 `
 
 const List = styled.ul`
-  font-size: 17px;
+  font-size: 16px;
   list-style: none; /* Remove default list styling */
   margin: 0;
   padding: 0;
@@ -146,7 +165,7 @@ const List = styled.ul`
 `
 
 const List2 = styled.ul`
-  font-size: 17px;
+  font-size: 16px;
   list-style: none; /* Remove default list styling */
   margin: 0;
   padding: 0;
@@ -178,7 +197,7 @@ const List2 = styled.ul`
 `
 
 const List3 = styled.ul`
-  font-size: 17px;
+  font-size: 16px;
   list-style: none; /* Remove default list styling */
   margin: 0;
   padding: 0;
