@@ -50,7 +50,7 @@ const Index = styled.div`
   font-style: normal;
   font-size: 20px;
   line-height: 24px;
-  color: #000000;
+  color: #ffffff;
 `
 
 const TextWrapper = styled.div`
@@ -65,7 +65,7 @@ const Title = styled.div`
   font-weight: 500;
   font-size: 20px;
   line-height: 18px;
-  color: #3913b8;
+  color: #99D6EB;
 `
 
 const ProgressBar = styled.div`
@@ -81,7 +81,7 @@ const Description = styled.div`
   font-weight: normal;
   font-size: 15px;
   line-height: 16px;
-  color: #192150;
+  color: #ffffff;
 `
 
 const Timestamp = styled.div`
@@ -100,5 +100,5 @@ const Timestamp = styled.div`
   font-weight: normal;
   font-size: 13px;
   line-height: 16px;
-  color: #000000;
+  color: #ffffff;
 `

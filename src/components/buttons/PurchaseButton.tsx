@@ -17,7 +17,7 @@ function PurchaseButton() {
       </IconWrapper>
       <TextWrapper>
         <Title>Go Next Level</Title>
-        <Subtitle>One Click Away.</Subtitle>
+        <Subtitle>Click to Scroll Down</Subtitle>
       </TextWrapper>
     </Wrapper>
   );
@@ -39,6 +39,11 @@ const Wrapper = styled.div`
   gap: 20px;
   transition: transform 0.3s ease; /* Smooth transition for hover effects */
   cursor: pointer; /* Add cursor pointer to indicate it's a clickable element */
+
+  &:hover {
+    transform: scale(1.03); /* Slight increase in size by 3% */
+    transform: rotateX(-10deg); /* 3D Rotation on hover */
+  }
 `;
 
 const TextWrapper = styled.div`
@@ -58,7 +63,7 @@ const Title = styled.p`
 
 const Subtitle = styled.p`
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 13px;
   color: black;
   opacity: 0.7;

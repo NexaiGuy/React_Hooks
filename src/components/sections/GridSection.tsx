@@ -6,7 +6,7 @@ import { sections } from "../data/sectionData"
 
 function GridSection() {
     return <Wrapper>
-        <Title>S K I L L S</Title>
+        <Title>SKILLS</Title>
         <Description>
             All my skills are explained step-by-step, in a way so that you can easily follow.
         </Description>
@@ -33,8 +33,8 @@ const Wrapper = styled.div`
   margin: 0 auto;
   text-align: center;
   gap: 12px;
-  padding: 180px 20px;
-  padding-bottom: 268px;
+  padding: 100px 20px;
+  padding-bottom: 80px;
   font-family: "SUSE", sans-serif;
 `
 const Title = styled.p`
@@ -46,10 +46,10 @@ const Title = styled.p`
   color: #ffffff;
 `
 const Description = styled.p`
-  max-width: 460ox;
+  max-width: 460px;
   font-size: 16px;
   line-height: 130%;
-  color: rgba(255, 255, 255, 0.7);
+  color: #ffffff;
   margin: 0 auto;
 `
 
@@ -59,10 +59,10 @@ const Grid = styled.div`
   gap: 8px;
   width: 100%;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.6);
   border: 0.5px solid rgba(255, 255, 255, 0.6);
   box-sizing: border-box;
   box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.3);
   backdrop-filter: blur(40px);
   border-radius: 20px;
+  background: linear-gradient(135deg, #7F1FA5 0%, #561073 100%);
 `

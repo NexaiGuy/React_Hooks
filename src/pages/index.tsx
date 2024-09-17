@@ -1,6 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import logo from "../static/images/logos/logo.svg";
+import logo from "../static/images/logos/logo.gif";
+import logo2 from "../static/images/logos/logo2.gif";
 import Meng from "../static/avatars/Meng.svg";
 import { useWindowSize } from "react-use";
 import "../components/layout.css"
@@ -11,6 +12,7 @@ import FlutterBuild from "../components/builds/FlutterBuild";
 import GridSection from "../components/sections/GridSection";
 import ClickProjects from "../components/sections/ClickProjects";
 import GridProjects from "../components/sections/GridProjects";
+import BioSection from "../components/sections/BioSection";
 import PurchaseButton from "../components/buttons/PurchaseButton";
 
 const IndexPage = () => {
@@ -21,16 +23,19 @@ const IndexPage = () => {
       <HeroWrapper>
         <CourseCard />
         <TextWrapper>
-          <Logo className="animate__animated animate__lightSpeedInRight illustration" src={logo} alt="icon" />
+          <LogoWrap>
+             <Logo2 className="animate__animated animate__lightSpeedInRight illustration" src={logo2} alt="icon" />
+             <Logo className="animate__animated animate__lightSpeedInRight illustration" src={logo} alt="icon" />
+          </LogoWrap>
           <Title className="animate__animated animate__lightSpeedInRight illustration">Portfolio <br /> Kevin Blancaflor</Title>
           <Caption>Check Out my ~ Websites ~ | ~ Skills ~ | ~ Projects ~</Caption>
-          <Description>Welcome on the overview of a guy with a grinding personality & perception.</Description>
+          <Description>Welcome on an overview of the guy with a grinding personality & perception.</Description>
           <AuthorWrapper>
             <AuthorImage src={Meng} alt="author image" />
-            <Caption>Brought to you by ( Nex AI )</Caption>
+            <Caption>Brought to you by Kevin</Caption>
           </AuthorWrapper>
           <PurchaseButton />
-          <SmallText>Small introduction about a Web Developer from Ghent | Belgium. <br /> Founder of:  | ⚜ Nex AI™ ⚜ | - | ⚜ Bikera™ ⚜ |</SmallText>
+          <SmallText>Small introduction about a (Web Developer) located in Ghent | Belgium <br /> ⚜ Founder ⚜ @ ~ Nex AI © ~  Bikera © ~</SmallText>
         </TextWrapper>
       </HeroWrapper>
       <ContentWrapper>
@@ -40,7 +45,10 @@ const IndexPage = () => {
       </ContentWrapper>
       <Divider />
       <GridSection />
+      <Divider2 />
       <GridProjects />
+      <Divider3 />
+      <BioSection />
       <FlutterWrapper width={width}>
         <FlutterBuild />
       </FlutterWrapper>
@@ -64,12 +72,12 @@ const TextWrapper = styled.div`
   position: relative;
   display: grid;
   gap: 20px;
-
+  margin-top: -182px;
   transition: transform 0.5s ease; /* Smooth transition for the hover effect */
   transform-style: preserve-3d; /* Preserve 3D transformation on hover */
   
   &:hover {
-    transform: rotateY(11deg); /* 3D Rotation on hover */
+    transform: rotateY(15deg); /* 3D Rotation on hover */
   }
 
   @media (max-width) {
@@ -104,9 +112,26 @@ const HeroWrapper = styled.div`
 `;
 
 const Logo = styled.img`
-  width: 60px;
-  height: 60px;
+  width: 84px;
+  height: 84px;
+  margin-right: 18px;
+  margin-top: 17px;
 `;
+
+const Logo2 = styled.img`
+  width: 120px;
+  height: 120px;
+
+`;
+
+const LogoWrap = styled.div`
+  display: flex;
+  display: right;
+  margin-top: 100px;
+  margin-left: -28px;
+`
+
+
 
 const Title = styled.h1`
   max-width: 500px;
@@ -122,15 +147,16 @@ const Title = styled.h1`
 `;
 
 const Caption = styled.p`
-  font-size: 15px;
+  font-size: 14px;
   font-style: normal;
+  font-weight: bold;
   line-height: 130%;
   text-transform: uppercase;
-  color: rgba(255,255,255, 0.7);
+  color: #C897C7;
 `;
 
 const Description = styled.p`
-
+  color: #DE6E2E;
 `;
 
 const AuthorImage = styled.img`
@@ -143,8 +169,8 @@ const SmallText = styled.p`
   font-style: normal;
   font-size: 13px;
   font-family: "SUSE", sans-serif;
-  line-height: 130%;
-  color: rgba(255, 255, 255, 0.7);
+  line-height: 200%;
+  color: #9EE0EC;
 `;
 
 const FlutterWrapper = styled.div`
@@ -160,5 +186,19 @@ const Divider = styled.div`
   width: 300px;
   height: 0.5px;
   background: rgba(255, 255, 255, 0.3);
-  margin: 60px auto 32px;
+  margin: 150px auto 32px;
+`;
+const Divider2 = styled.div`
+  width: 300px;
+  height: 0.5px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 80px auto 32px;
+  margin-bottom: 150px;
+`;
+const Divider3 = styled.div`
+  width: 300px;
+  height: 0.5px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 0px auto 32px;
+  margin-bottom: 90px;
 `;
