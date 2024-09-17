@@ -59,7 +59,7 @@ const Grid = styled.div`
   gap: 8px;
   width: 100%;
   padding: 20px;
-  background: linear-gradient(135deg, #7F1FA5 0%, #561073 100%);
+  background: linear-gradient(370deg, #BB5670, #471CAB);
   border: 0.5px solid rgba(255, 255, 255, 0.6);
   box-sizing: border-box;
   box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.3);

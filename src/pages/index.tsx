@@ -2,7 +2,6 @@ import * as React from "react";
 import styled from "styled-components";
 import logo from "../static/images/logos/logo.gif";
 import logo2 from "../static/images/logos/logo2.gif";
-import Meng from "../static/avatars/Meng.svg";
 import { useWindowSize } from "react-use";
 import "../components/layout.css"
 import 'animate.css';
@@ -28,14 +27,13 @@ const IndexPage = () => {
              <Logo className="animate__animated animate__lightSpeedInRight illustration" src={logo} alt="icon" />
           </LogoWrap>
           <Title className="animate__animated animate__lightSpeedInRight illustration">Portfolio <br /> Kevin Blancaflor</Title>
-          <Caption>Check Out my ~ Websites ~ | ~ Skills ~ | ~ Projects ~</Caption>
+          <Caption>Check Out my: <br /><br /> Websites  |  Skills  &  Projects </Caption>
           <Description>Welcome on an overview of the guy with a grinding personality & perception.</Description>
           <AuthorWrapper>
-            <AuthorImage src={Meng} alt="author image" />
-            <Caption>Brought to you by Kevin</Caption>
+            <Caption>Brought to you by *Kevin*</Caption>
           </AuthorWrapper>
           <PurchaseButton />
-          <SmallText>Small introduction about a (Web Developer) located in Ghent | Belgium <br /> ⚜ Founder ⚜ @ ~ Nex AI © ~  Bikera © ~</SmallText>
+          <SmallText>Small introduction about a (Web Developer) located in Ghent | Belgium <br /> ⚜ Founder ⚜ @ ~ Nex AI © ~ Bikera © </SmallText>
         </TextWrapper>
       </HeroWrapper>
       <ContentWrapper>
@@ -59,7 +57,7 @@ const IndexPage = () => {
 export default IndexPage;
 
 const Wrapper = styled.div`
-  background: linear-gradient(200.44deg, #4316db 13.57%, #9076e7);
+  background: linear-gradient(200.44deg, #000000	 13.57%, #343434,#9076e7	);
   overflow: hidden;
   font-family: "SUSE", sans-serif;
 `;
@@ -73,6 +71,7 @@ const TextWrapper = styled.div`
   display: grid;
   gap: 20px;
   margin-top: -182px;
+  margin-left: 20px;
   transition: transform 0.5s ease; /* Smooth transition for the hover effect */
   transform-style: preserve-3d; /* Preserve 3D transformation on hover */
   
@@ -152,7 +151,7 @@ const Caption = styled.p`
   font-weight: bold;
   line-height: 130%;
   text-transform: uppercase;
-  color: #C897C7;
+  color: #96D5E0;
 `;
 
 const Description = styled.p`

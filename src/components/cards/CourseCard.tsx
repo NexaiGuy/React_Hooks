@@ -48,7 +48,7 @@ const AnimationWrapper = styled.div`
 `;
 
 const Illustration = styled.img`
-  width: 435px;
+  width: 460px;
   height: 485px;
   border-radius: 7px;
 `;

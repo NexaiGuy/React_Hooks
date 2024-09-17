@@ -6,22 +6,22 @@ import { sections } from "../data/sectionData"
 
 function GridSection() {
     return <Wrapper>
-        <Title>SKILLS</Title>
-        <Description>
-            All my skills are explained step-by-step, in a way so that you can easily follow.
-        </Description>
-        <Grid>
-          {sections.map((section, index) => (
-            <SectionRow
-              key={index} 
-              index={index + 1} 
-              title={ section.title} 
-              description={ section.description} 
-              timestamp={ section.duration}
-            />
-          ))}
-        </Grid>
-    </Wrapper>
+             <Title>SKILLS</Title>
+             <Description>
+                 All my skills are explained step-by-step, in a way so that you can easily follow.
+             </Description>
+             <Grid>
+               {sections.map((section, index) => (
+                 <SectionRow
+                   key={index} 
+                   index={index + 1} 
+                   title={ section.title} 
+                   description={ section.description} 
+                   timestamp={ section.duration}
+                 />
+               ))}
+             </Grid>
+            </Wrapper>
 }
 
 export default GridSection
@@ -64,5 +64,5 @@ const Grid = styled.div`
   box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.3);
   backdrop-filter: blur(40px);
   border-radius: 20px;
-  background: linear-gradient(135deg, #7F1FA5 0%, #561073 100%);
+  background: linear-gradient(370deg, #BB5670, #471CAB);
 `
