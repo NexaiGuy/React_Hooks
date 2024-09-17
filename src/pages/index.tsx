@@ -64,6 +64,7 @@ const Wrapper = styled.div`
 
 const ContentWrapper = styled.div`
   overflow: hidden;
+  
 `;
 
 const TextWrapper = styled.div`
@@ -162,11 +163,6 @@ const Caption = styled.p`
 
 const Description = styled.p`
   color: #DE6E2E;
-`;
-
-const AuthorImage = styled.img`
-  width: 32px;
-  height: 32px;
 `;
 
 const SmallText = styled.p`

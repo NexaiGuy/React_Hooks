@@ -103,30 +103,32 @@ const Wrapper = styled.div`
 
   .mockup4 {
     position: absolute;
-    width: 399.95px;
-    height: 273.84px;
+    width: 401.95px;
+    height: 260.84px;
     flex-shrink: 0;
-    top: 440.52px;
-    left: 1081px;
+    top: 427.52px;
+    left: 1160px;
     display: inline-flex;
     padding: 13.692px;
-    align-items: flex-start;
     gap: 13.692px;
     border-radius: 13.692px;
     border: 0.342px solid rgba(255, 255, 255, 0.2);
     background: rgba(39, 20, 62, 0.3);
     backdrop-filter: blur(13.692px);
+    box-shadow: 0px 16.388px 32.776px 0px rgba(99, 30, 187, 0.5);
   }
 
   .mockup5 {
     position: absolute;
-    width: 412px;
-    height: 254px;
-    left: 754px;
+    width: 400px;
+    height: 262px;
+    left: 750px;
     top: 428px;
     background: rgba(39, 20, 62, 0.2);
-    box-shadow: inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(20px);
     border-radius: 8px;
+    box-shadow: 0px 16.388px 32.776px 0px rgba(99, 30, 187, 0.5);
+    flex-shrink: 0;
+    display: inline-flex;
   }
 `;
