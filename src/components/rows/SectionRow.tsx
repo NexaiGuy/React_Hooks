@@ -65,7 +65,7 @@ const Title = styled.div`
   font-weight: 500;
   font-size: 20px;
   line-height: 18px;
-  color: #99D6EB;
+  color: #3FB2F4;
 `
 
 const ProgressBar = styled.div`
@@ -81,7 +81,7 @@ const Description = styled.div`
   font-weight: normal;
   font-size: 15px;
   line-height: 16px;
-  color: #ffffff;
+  color: #98D1E9;
 `
 
 const Timestamp = styled.div`
