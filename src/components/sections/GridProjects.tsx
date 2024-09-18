@@ -35,7 +35,8 @@ const Wrapper = styled.div`
   gap: 12px;
   padding: 0 20px;
   padding-bottom: 110px;
-  font-family: "SUSE", sans-serif;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
 `
 const Title = styled.p`
   font-style: normal;
@@ -48,19 +49,31 @@ const Title = styled.p`
 
   margin: 0 auto;
   max-width: 100%;
-  padding: 20px;
+  padding: 0 36px;
   border: 0.5px solid rgba(255, 255, 255, 0.6);
   box-sizing: border-box;
   box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.9);
   backdrop-filter: blur(40px);
   border-radius: 20px;
-  background: linear-gradient(370deg, rgba(187, 86, 112, 0.5), rgba(71, 28, 171, 0.5));
+  background: linear-gradient(370deg, rgba(187, 86, 112, 0.5), rgba(71, 28, 171, 0.5), rgba(63,176,244, 0.5));
+
+  transition: transform 0.6s ease; /* Smooth transition for the hover effect */
+  transform-style: preserve-3d; /* Preserve 3D transformation on hover */
+
+  &:hover {
+    transform: rotateY(360deg);
+    transition: transform 0.5s ease-in-out; /* Smooth animation */
+    transform-style: preserve-3d; /* Preserve 3D effect */
+    perspective: 1000px; /* Create perspective for 3D effect */
+    opacity: 81%;
+    transition: 1s;
+  }
 `
 
 const Description = styled.p`
   max-width: 460ox;
   font-size: 16px;
-  line-height: 130%;
+  line-height: 33px;
   color: #98D1E9;
   margin: 0 auto 20px;
 
@@ -71,7 +84,7 @@ const Description = styled.p`
   box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.3);
   backdrop-filter: blur(40px);
   border-radius: 20px;
-  background: linear-gradient(370deg, rgba(187, 86, 112, 0.5), rgba(71, 28, 171, 0.1));
+  background: linear-gradient(370deg, rgba(187, 86, 112, 0.5), rgba(71, 28, 171, 0.1), rgba(63,176,244, 0.5));
 `
 
 const Grid = styled.div`
@@ -80,7 +93,7 @@ const Grid = styled.div`
   gap: 8px;
   width: 100%;
   padding: 20px;
-  background: linear-gradient(370deg, rgba(187, 86, 112, 0.5), rgba(71, 28, 171, 0.1));
+  background: linear-gradient(370deg, rgba(187, 86, 112, 0.5), rgba(71, 28, 171, 0.1), rgba(63,176,244, 0.5));
   border: 0.5px solid rgba(255, 255, 255, 0.6);
   box-sizing: border-box;
   box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.3);

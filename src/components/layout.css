@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
 
 html,
@@ -139,4 +140,15 @@ a {
   color: #3913b8;
   font-weight: 600;
   text-decoration: none;
+}
+
+@keyframes HeroAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }

@@ -27,11 +27,20 @@ const Wrapper = styled.div`
   background-blend-mode: overlay;
   mix-blend-mode: normal;
   border-radius: 10px;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
 
   :hover {
     background: rgba(68, 66, 178, 0.1);
     box-shadow: inset 0px 0px 0px 0.5px rgba(68, 66, 178, 0.2);
   }
+
+  transition: transform 0.33s ease; /* Smooth transition for the hover effect */
+  transform-style: preserve-3d; /* Preserve 3D transformation on hover */
+
+  &:hover {
+    transform: translateY(-10px); /* 3D Rotation on hover */
+  } 
 `
 
 const Index = styled.div`
@@ -76,7 +85,7 @@ const Description = styled.div`
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
-  line-height: 16px;
+  line-height: 23px;
   color: #98D1E9;
 `
 

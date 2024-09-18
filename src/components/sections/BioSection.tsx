@@ -6,7 +6,7 @@ export default function BioSection() {
     <Wrapper>
       <div>
         <Title>BIO</Title>
-        <Bio>
+        <BioContent>
             <Name>Kevin Blancaflor</Name>
             <Expertise>Web Developer | Tech & Marketing Expert</Expertise>
             <Description>
@@ -51,7 +51,7 @@ export default function BioSection() {
                 <li>For inquiries: blancaflorkevin@gmail.com</li>
               </ul>
             </List3>
-        </Bio>  
+        </BioContent>  
       </div>
     </Wrapper>
   );
@@ -60,13 +60,16 @@ export default function BioSection() {
 const Wrapper = styled.div`
   position: relative;
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   max-width: 1234px;
+  width: 100%;
   height: 1800px;
   margin: 0 auto;
   text-align: center;
-  font-family: "SUSE", sans-serif;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
   padding-top: 210px;
-  padding: 20px;
+  padding: 100px 20px;
 `
 
 const Title = styled.div`
@@ -75,9 +78,9 @@ const Title = styled.div`
   font-weight: bold;
 
   margin: 0 auto;
-  margin-bottom: 40px;
-  padding: 10px;
-  max-width: 16%;
+  margin-bottom: 14px;
+  padding: 0 36px;
+  max-width: 18%;
   line-height: 130%;
   text-transform: uppercase;
   color: #3FB1F4;
@@ -87,11 +90,22 @@ const Title = styled.div`
   backdrop-filter: blur(40px);
   border-radius: 20px;
   background: linear-gradient(370deg, rgba(187, 86, 112, 0.5), rgba(71, 28, 171, 0.5), rgba(63,176,244, 0.5));
+
+  transition: transform 0.6s ease; /* Smooth transition for the hover effect */
+  transform-style: preserve-3d; /* Preserve 3D transformation on hover */
+
+  &:hover {
+    transform: rotateY(360deg);
+    transition: transform 0.5s ease-in-out; /* Smooth animation */
+    transform-style: preserve-3d; /* Preserve 3D effect */
+    perspective: 1000px; /* Create perspective for 3D effect */
+    opacity: 81%;
+    transition: 1s;
+  }
 `;
 
 
-const Bio = styled.div`
-  max-width: 1234px;
+const BioContent = styled.div`
   font-size: 18px;
   line-height: 130%;
   color: #ffffff;
@@ -103,7 +117,7 @@ const Bio = styled.div`
   box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.3);
   backdrop-filter: blur(40px);
   border-radius: 20px;
-  background: linear-gradient(460deg, rgba(63,176,244, 0.3), rgba(71, 28, 171, 0.1), rgba(63,176,244, 0.3));
+  background: linear-gradient(460deg, rgba(187, 86, 112, 0.4), rgba(63,176,244, 0.3), rgba(71, 28, 171, 0.1), rgba(63,176,244, 0.3),rgba(187, 86, 112, 0.4));
 `;
 
 const Name = styled.h1`

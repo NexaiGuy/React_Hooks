@@ -20,21 +20,29 @@ const IndexPage = () => {
   return (
     <Wrapper>
       <HeroWrapper>
-        <CourseCard />
-        <TextWrapper>
-          <LogoWrap>
-             <Logo2 className="animate__animated animate__lightSpeedInRight illustration" src={logo2} alt="icon" />
-             <Logo className="animate__animated animate__lightSpeedInRight illustration" src={logo} alt="icon" />
-          </LogoWrap>
-          <Title className="animate__animated animate__lightSpeedInRight illustration">Portfolio <br /> Kevin Blancaflor</Title>
-          <Caption>Check Out my: <br /><br /> Websites  |  Skills  &  Projects </Caption>
-          <Description>Welcome on an overview of the guy with a grinding personality & perception.</Description>
-          <AuthorWrapper>
-            <Caption>Brought to you by *Kevin*</Caption>
-          </AuthorWrapper>
-          <PurchaseButton />
-          <SmallText>Small introduction about a (Web Developer) located in Ghent | Belgium <br /> ⚜ Founder ⚜ @ ~ Nex AI © ~ Bikera © </SmallText>
-        </TextWrapper>
+          <CourseCard />
+          <TextWrapper>
+            <LogoWrap>
+              <LogoCon>
+                <a href="https://nexai.beehiiv.com/" target="_blank"><Logo2 className="animate__animated animate__fadeInDownBig illustration" src={logo2} alt="icon" /></a>
+              </LogoCon>
+              <LogoCon2>
+                <a href="https://bikera.org/" target="_blank"><Logo className="animate__animated animate__fadeInDownBig illustration" src={logo} alt="icon" /></a>
+              </LogoCon2>
+            </LogoWrap>
+            <Title className="animate__animated animate__lightSpeedInRight illustration">
+              <HoverableWord>Portfolio</HoverableWord> <br /> 
+              <HoverableWord>Kevin</HoverableWord> <br />
+              <HoverableWord>Blancaflor</HoverableWord>
+            </Title>
+            <Caption>Check Out my: <br /><br /> Websites  |  Skills  &  Projects </Caption>
+            <Description>Welcome on an overview of the guy with a grinding personality & perception.</Description>
+            <AuthorWrapper>
+              <Caption>Brought to you by *Kevin*</Caption>
+            </AuthorWrapper>
+            <PurchaseButton />
+            <SmallText>Small introduction about a (Web Developer) located in Ghent | Belgium <br /> ⚜ Founder ⚜ @ ~ Nex AI © ~ Bikera © </SmallText>
+          </TextWrapper>
       </HeroWrapper>
       <ContentWrapper>
         <div id="click-projects">
@@ -57,9 +65,21 @@ const IndexPage = () => {
 export default IndexPage;
 
 const Wrapper = styled.div`
-  background: linear-gradient(180.44deg, #0C0D31	 25.57%, #000000);
+  background: linear-gradient(180.44deg, #0C0D31 25.57%, #000000);
   overflow: hidden;
-  font-family: "SUSE", sans-serif;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+
+  @keyframes HeroAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
 `;
 
 const ContentWrapper = styled.div`
@@ -73,12 +93,6 @@ const TextWrapper = styled.div`
   gap: 20px;
   margin-top: -182px;
   margin-left: 20px;
-  transition: transform 0.5s ease; /* Smooth transition for the hover effect */
-  transform-style: preserve-3d; /* Preserve 3D transformation on hover */
-  
-  &:hover {
-    transform: rotateY(15deg); /* 3D Rotation on hover */
-  }
 
   @media (max-width) {
     justify-items: center;
@@ -118,20 +132,40 @@ const Logo = styled.img`
   margin-top: 17px;
 `;
 
+const LogoCon = styled.div`
+  transition: transform 0.6s ease; /* Smooth transition for the hover effect */
+  transform-style: preserve-3d; /* Preserve 3D transformation on hover */
+
+  &:hover {
+    transform: translateY(-20px); /* 3D Rotation on hover */
+  }
+`
+
 const Logo2 = styled.img`
   width: 120px;
   height: 120px;
-
 `;
+
+const LogoCon2 = styled.div`
+  transition: transform 0.6s ease; /* Smooth transition for the hover effect */
+  transform-style: preserve-3d; /* Preserve 3D transformation on hover */
+
+  &:hover {
+    transform: translateY(-20px); /* 3D Rotation on hover */
+  }
+`
 
 const LogoWrap = styled.div`
   display: flex;
   display: right;
+  display: inline-flex;
   margin-top: 100px;
   margin-left: -28px;
+
+  .animate__fadeInDownBig {
+    animation-duration: 1.3s;
+  }
 `
-
-
 
 const Title = styled.h1`
   max-width: 500px;
@@ -144,12 +178,20 @@ const Title = styled.h1`
   font-weight: weight;
   font-style: normal;
   animation-duration: 1.4s; /* don't forget to set a duration! */
-  text-shadow: 
-    0px 1px 3px rgba(0, 0, 0, 0.1),    /* Small external shadow */
-    0px 20px 40px rgba(146,207,218, 0.3), /* Larger glowing shadow for a stronger glow */
-    0px 0px 10px rgba(255, 255, 255, 0), /* Stronger white highlight for shine */
-    0px 0px 20px rgba(146,207,218, 0.1), /* Additional white layer for more shine */
-    0px 0px 30px rgba(23, 0, 102, 0.2); /* Final large purple shadow for soft glow */
+`;
+
+const HoverableWord = styled.span`
+  display: inline-block;
+  transition: transform 0.5s ease;
+  
+  &:hover {
+    transform: translateY(-10px); /* Lift up on hover */
+  }
+
+  -webkit-box-shadow:0px 0px 105px 45px rgba(251,255,138,0.03);
+  -moz-box-shadow: 0px 0px 105px 45px rgba(251,255,138,0.03);
+  box-shadow: 0px 0px 105px 45px rgba(251,255,138,0.03);
+  border-radius: 7px;
 `;
 
 const Caption = styled.p`
@@ -159,23 +201,46 @@ const Caption = styled.p`
   line-height: 130%;
   text-transform: uppercase;
   color: #96D5E0;
+  animation: HeroAnimation;
+  animation-duration: 3s;
+
+  transition: transform 0.5s ease; /* Smooth transition for the hover effect */
+  transform-style: preserve-3d; /* Preserve 3D transformation on hover */
+
+  &:hover {
+    transform: translateY(-10px); /* 3D Rotation on hover */
+  }  
 `;
 
 const Description = styled.p`
   color: #DE6E2E;
+  -webkit-box-shadow:0px 0px 105px 45px rgba(251,255,138,0.05);
+  -moz-box-shadow: 0px 0px 105px 45px rgba(251,255,138,0.05);
+  box-shadow: 0px 0px 105px 45px rgba(251,255,138,0.05);
+  border-radius: 7px;
+  animation: HeroAnimation;
+  animation-duration: 3s;
+  transition: transform 0.5s ease; /* Smooth transition for the hover effect */
+  transform-style: preserve-3d; /* Preserve 3D transformation on hover */
+  
+  &:hover {
+    transform: translateY(-7px); /* 3D Rotation on hover */
+  }
 `;
 
 const SmallText = styled.p`
-  max-width: 280px;
+  max-width: 285px;
   font-style: normal;
   font-size: 13px;
   font-family: "SUSE", sans-serif;
   line-height: 200%;
   color: #9EE0EC;
+  animation: HeroAnimation;
+  animation-duration: 3s;
 `;
 
 const FlutterWrapper = styled.div`
-  margin: 100px auto;
+  margin: 380px auto;
 
   @media (max-width: 1440px){
     transform-origin: top left;
@@ -201,5 +266,4 @@ const Divider3 = styled.div`
   height: 0.5px;
   background: rgba(255, 255, 255, 0.3);
   margin: 0px auto 32px;
-  margin-bottom: 90px;
-`;
+`

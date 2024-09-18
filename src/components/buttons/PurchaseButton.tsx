@@ -28,21 +28,24 @@ export default PurchaseButton;
 const Wrapper = styled.div`
   width: 280px;
   height: 77px;
+  margin-top: 11px;
   padding: 12px;
   background: linear-gradient(180deg, #ffffff 0%, #d9dfff 100%);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 20px 40px rgba(23, 0, 102, 0.2),
     inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   display: grid;
-  grid-template-columns: 53px auto;
+  grid-template-columns: 63px auto;
   align-items: center;
   gap: 20px;
-  transition: transform 0.3s ease; /* Smooth transition for hover effects */
-  cursor: pointer; /* Add cursor pointer to indicate it's a clickable element */
-
+  animation: HeroAnimation;
+  animation-duration: 3s;
+  
+  transition: transform 0.5s ease; /* Smooth transition for the hover effect */
+  transform-style: preserve-3d; /* Preserve 3D transformation on hover */
+  
   &:hover {
-    transform: scale(1.03); /* Slight increase in size by 3% */
-    transform: rotateX(-10deg); /* 3D Rotation on hover */
+    transform: translateY(-4px); /* 3D Rotation on hover */
   }
 `;
 
