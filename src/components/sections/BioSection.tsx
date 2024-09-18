@@ -61,7 +61,7 @@ const Wrapper = styled.div`
   position: relative;
   display: grid;
   max-width: 1234px;
-  height: 1600px;
+  height: 1800px;
   margin: 0 auto;
   text-align: center;
   font-family: "SUSE", sans-serif;
@@ -73,21 +73,38 @@ const Title = styled.div`
   font-style: normal;
   font-size: 27px;
   font-weight: bold;
+
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 10px;
+  max-width: 16%;
   line-height: 130%;
   text-transform: uppercase;
-  color: #ffffff;
-  margin-bottom: 20px;
-  padding: 10px; /* Add padding to ensure space inside the border */
-`
+  color: #3FB1F4;
+  border: 0.5px solid rgba(255, 255, 255, 0.6);
+  box-sizing: border-box;
+  box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.9);
+  backdrop-filter: blur(40px);
+  border-radius: 20px;
+  background: linear-gradient(370deg, rgba(187, 86, 112, 0.5), rgba(71, 28, 171, 0.5), rgba(63,176,244, 0.5));
+`;
+
 
 const Bio = styled.div`
-  max-width: 960px;
+  max-width: 1234px;
   font-size: 18px;
   line-height: 130%;
   color: #ffffff;
   margin: 0 auto;
   text-align: start;
-`
+  padding: 120px;
+  border: 0.5px solid rgba(255, 255, 255, 0.6);
+  box-sizing: border-box;
+  box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.3);
+  backdrop-filter: blur(40px);
+  border-radius: 20px;
+  background: linear-gradient(460deg, rgba(63,176,244, 0.3), rgba(71, 28, 171, 0.1), rgba(63,176,244, 0.3));
+`;
 
 const Name = styled.h1`
   font-size: 33px;

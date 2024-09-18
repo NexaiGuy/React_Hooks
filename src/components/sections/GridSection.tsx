@@ -51,11 +51,13 @@ const Title = styled.p`
   padding: 20px;
   border: 0.5px solid rgba(255, 255, 255, 0.6);
   box-sizing: border-box;
-  box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.3);
+  box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.9);
   backdrop-filter: blur(40px);
   border-radius: 20px;
-  background: linear-gradient(370deg, #BB5670, #471CAB);
-`
+  background: linear-gradient(370deg, rgba(187, 86, 112, 0.5), rgba(71, 28, 171, 0.5));
+
+`;
+
 const Description = styled.p`
   max-width: 600px;
   font-size: 16px;
@@ -70,8 +72,9 @@ const Description = styled.p`
   box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.3);
   backdrop-filter: blur(40px);
   border-radius: 20px;
-  background: linear-gradient(370deg, #BB5670, #471CAB);
-`
+  background: linear-gradient(370deg, rgba(187, 86, 112, 0.5), rgba(71, 28, 171, 0.1));
+`;
+
 
 const Grid = styled.div`
   display: grid;
@@ -84,5 +87,5 @@ const Grid = styled.div`
   box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.3);
   backdrop-filter: blur(40px);
   border-radius: 20px;
-  background: linear-gradient(370deg, #BB5670, #471CAB);
-`
+  background: linear-gradient(370deg, rgba(187, 86, 112, 0.5), rgba(71, 28, 171, 0.1));
+`;

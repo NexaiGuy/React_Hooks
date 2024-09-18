@@ -28,10 +28,6 @@ const Wrapper = styled.div`
   mix-blend-mode: normal;
   border-radius: 10px;
 
-  &, * {
-    transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
-  }
-
   :hover {
     background: rgba(68, 66, 178, 0.1);
     box-shadow: inset 0px 0px 0px 0.5px rgba(68, 66, 178, 0.2);
