@@ -71,7 +71,8 @@ const Title = styled.p`
 `
 
 const Description = styled.p`
-  max-width: 460ox;
+  font-family: "Open Sans", sans-serif;
+  max-width: 460px;
   font-size: 16px;
   line-height: 33px;
   color: #98D1E9;

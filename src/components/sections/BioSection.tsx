@@ -111,7 +111,7 @@ const BioContent = styled.div`
   color: #ffffff;
   margin: 0 auto;
   text-align: start;
-  padding: 120px;
+  padding: 240px;
   border: 0.5px solid rgba(255, 255, 255, 0.6);
   box-sizing: border-box;
   box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.3);
@@ -131,6 +131,7 @@ const Expertise = styled.div`
 `
 
 const Description = styled.div`
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-style: italic;
   line-height: 28px;
@@ -145,6 +146,7 @@ const Text = styled.p`
 `
 
 const List = styled.ul`
+  font-family: "Open Sans", sans-serif;
   font-size: 17px;
   list-style: none; /* Remove default list styling */
   margin: 0;
@@ -153,7 +155,6 @@ const List = styled.ul`
   display: flex; /* Flexbox layout for horizontal items */
   align-items: center;
   line-height: 36px;
-
 
   li {
     position: relative;
@@ -178,6 +179,7 @@ const List = styled.ul`
 `
 
 const List2 = styled.ul`
+  font-family: "Open Sans", sans-serif;
   font-size: 17px;
   list-style: none; /* Remove default list styling */
   margin: 0;
@@ -210,6 +212,7 @@ const List2 = styled.ul`
 `
 
 const List3 = styled.ul`
+  font-family: "Open Sans", sans-serif;
   font-size: 17px;
   list-style: none; /* Remove default list styling */
   margin: 0;

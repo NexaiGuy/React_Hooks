@@ -27,7 +27,6 @@ const Wrapper = styled.div`
   background-blend-mode: overlay;
   mix-blend-mode: normal;
   border-radius: 10px;
-  font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
 
   :hover {
@@ -51,7 +50,7 @@ const Index = styled.div`
   background-blend-mode: overlay;
   border-radius: 50%;
   place-items: center;
-
+  
   font-style: normal;
   font-size: 20px;
   line-height: 24px;
@@ -82,6 +81,7 @@ const ProgressBar = styled.div`
 `
 
 const Description = styled.div`
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;

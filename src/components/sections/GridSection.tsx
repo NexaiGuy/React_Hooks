@@ -46,7 +46,7 @@ const Title = styled.p`
   line-height: 130%;
   text-transform: uppercase;
   color: #3FB2F4;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   margin: 0 auto;
   max-width: 100%;
@@ -56,7 +56,7 @@ const Title = styled.p`
   box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.9);
   backdrop-filter: blur(40px);
   border-radius: 20px;
-  background: linear-gradient(370deg, rgba(187, 86, 112, 0.5), rgba(71, 28, 171, 0.5), rgba(63,176,244, 0.5));
+  background: linear-gradient(370deg, rgba(187, 86, 112, 1), rgba(71, 28, 171, 1), rgba(63,176,244, 1));
 
   transition: transform 0.6s ease; /* Smooth transition for the hover effect */
   transform-style: preserve-3d; /* Preserve 3D transformation on hover */
@@ -77,7 +77,7 @@ const Description = styled.p`
   line-height: 33px;
   color: #98D1E9;
   margin: 0 auto 20px;
-
+  font-family: "Open Sans", sans-serif;
   width: 100%;
   padding: 20px;
   border: 0.5px solid rgba(255, 255, 255, 0.6);
@@ -85,7 +85,7 @@ const Description = styled.p`
   box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.3);
   backdrop-filter: blur(40px);
   border-radius: 20px;
-  background: linear-gradient(370deg, rgba(187, 86, 112, 0.5), rgba(71, 28, 171, 0.1), rgba(63,176,244, 0.5));
+  background: linear-gradient(370deg, rgba(187, 86, 112, 1), rgba(71, 28, 171, 1), rgba(63,176,244, 1));
 `;
 
 
@@ -100,5 +100,5 @@ const Grid = styled.div`
   box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.3);
   backdrop-filter: blur(40px);
   border-radius: 20px;
-  background: linear-gradient(370deg, rgba(187, 86, 112, 0.5), rgba(71, 28, 171, 0.1), rgba(63,176,244, 0.5));
+  background: linear-gradient(370deg, rgba(187, 86, 112, 1), rgba(71, 28, 171, 1), rgba(63,176,244, 1));
 `;

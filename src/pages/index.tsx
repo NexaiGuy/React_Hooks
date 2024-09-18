@@ -3,7 +3,7 @@ import styled from "styled-components";
 import logo from "../static/images/logos/logo.gif";
 import logo2 from "../static/images/logos/logo2.gif";
 import { useWindowSize } from "react-use";
-import "../components/layout.css"
+import "../components/layout.css";
 import 'animate.css';
 
 import CourseCard from "../components/cards/CourseCard";
@@ -13,12 +13,50 @@ import ClickProjects from "../components/sections/ClickProjects";
 import GridProjects from "../components/sections/GridProjects";
 import BioSection from "../components/sections/BioSection";
 import PurchaseButton from "../components/buttons/PurchaseButton";
+import { useEffect } from "react";
 
 const IndexPage = () => {
   const { width } = useWindowSize();
 
+  useEffect(() => {
+    // Dynamically load the three.js script
+    const scriptThree = document.createElement("script");
+    scriptThree.src = "https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js";
+    scriptThree.async = true;
+    document.body.appendChild(scriptThree);
+
+    // Dynamically load the Vanta Waves script
+    const scriptVanta = document.createElement("script");
+    scriptVanta.src = "https://cdn.jsdelivr.net/npm/vanta/dist/vanta.halo.min.js";
+    scriptVanta.async = true;
+    document.body.appendChild(scriptVanta);
+
+    // Initialize Vanta after both scripts are loaded
+    scriptVanta.onload = () => {
+      if (window.VANTA) {
+        window.VANTA.HALO({
+          el: "#my-background",
+          color: 0x000000,    // Pure black for the halo color
+          backgroundColor: 0x0d0d0d, // Very dark background to blend with the main color
+          shininess: 1,       // No shininess for a completely matte look
+          waveHeight: 420,
+          waveSpeed: 1,
+          zoom: 1,
+          size: 1,
+          amplitudeFactor: 10,           // Significantly larger zoom for a close-up effect
+        });
+      }
+    };
+
+    // Cleanup: Remove scripts when the component unmounts
+    return () => {
+      document.body.removeChild(scriptThree);
+      document.body.removeChild(scriptVanta);
+    };
+  }, []); // Only run once, after the component mounts
+
   return (
-    <Wrapper>
+    <Wrapper id="my-background">
       <HeroWrapper>
           <CourseCard />
           <TextWrapper>
@@ -35,7 +73,8 @@ const IndexPage = () => {
               <HoverableWord>Kevin</HoverableWord> <br />
               <HoverableWord>Blancaflor</HoverableWord>
             </Title>
-            <Caption>Check Out my: <br /><br /> Websites  |  Skills  &  Projects </Caption>
+            <Caption>Check Out my</Caption>
+            <Caption>Websites  |  Skills | Projects </Caption>
             <Description>Welcome on an overview of the guy with a grinding personality & perception.</Description>
             <AuthorWrapper>
               <Caption>Brought to you by *Kevin*</Caption>
@@ -195,12 +234,17 @@ const HoverableWord = styled.span`
 `;
 
 const Caption = styled.p`
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: bold;
   line-height: 130%;
   text-transform: uppercase;
   color: #96D5E0;
+  -webkit-box-shadow:0px 0px 105px 45px rgba(251,255,138,0.05);
+  -moz-box-shadow: 0px 0px 105px 45px rgba(251,255,138,0.05);
+  box-shadow: 0px 0px 105px 45px rgba(251,255,138,0.009);
+
   animation: HeroAnimation;
   animation-duration: 3s;
 
@@ -222,6 +266,9 @@ const Description = styled.p`
   animation-duration: 3s;
   transition: transform 0.5s ease; /* Smooth transition for the hover effect */
   transform-style: preserve-3d; /* Preserve 3D transformation on hover */
+
+  font-style: normal;
+  font-weight: 800;
   
   &:hover {
     transform: translateY(-7px); /* 3D Rotation on hover */

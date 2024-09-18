@@ -6,10 +6,7 @@ import Illu from "/src/images/illustrations/illustration-1.jpg";
 function CourseCard(props) {
   return (
     <Wrapper className="courseCard">
-      <AnimationWrapper>
-
-      </AnimationWrapper>
-      <div className="illustration">
+      <div className="illustration animate__animated animate__fadeInDownBig illustration">
         <Illustration src={Illu} alt="Credit Icon" />
       </div>
     </Wrapper>
@@ -27,24 +24,19 @@ const Wrapper = styled.div`
   width: 100%;
   height: 480px;
   border-radius: 20px;
-  box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.25),
-    inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.25);
+  
   perspective: 1000px; /* Add perspective to parent for 3D effect */
   transition: transform 0.8s ease; /* Smooth transition for the hover effect */
   transform-style: preserve-3d; /* Preserve 3D transformation on hover */
   
   &:hover {
     transform: rotateX(-15deg) rotateY(-12deg) translateY(-42px); /* 3D Rotation on hover */
+    opacity: 94%;
+    transition: 1.5s;
   }
 `;
 
-const AnimationWrapper = styled.div`
-  position: absolute;
-  width: 360px;
-  overflow: hidden;
-  padding-top: 30px;
-  mix-blend-mode: overlay;
-`;
+
 
 const Illustration = styled.img`
   width: 460px;
