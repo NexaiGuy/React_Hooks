@@ -57,6 +57,12 @@ const Illustration = styled.img`
   height: 485px;
   border-radius: 7px;
 
+  @media (max-width: 1920px) {
+    width: 400px;
+    height: 420px; /* Adjust size for tablets */
+    margin-bottom: 278px;
+  }
+
   @media (max-width: 1024px) {
     width: 400px;
     height: 420px; /* Adjust size for tablets */
