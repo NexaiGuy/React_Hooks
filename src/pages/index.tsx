@@ -5,7 +5,7 @@ import logo2 from "../static/images/logos/logo2.gif";
 import { useWindowSize } from "react-use";
 import "../components/layout.css";
 import 'animate.css';
-import Header from "/src/components/Header"; 
+import Header from "../components/Header"; 
 
 import CourseCard from "../components/cards/CourseCard";
 import FlutterBuild from "../components/builds/FlutterBuild";
