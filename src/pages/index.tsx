@@ -114,7 +114,7 @@ const Wrapper = styled.div`
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
   height: 10000px;
-  overflow: hidden;
+  overflow: auto;
 
   @keyframes HeroAnimation {
     0% {
