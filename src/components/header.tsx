@@ -5,10 +5,10 @@ import { menuData } from "./data/menuData"; // Import the updated menuData
 import MenuButton from "./buttons/MenuButton";
 import MenuTooltip from "./tooltip/MenuTooltip";
 
-import logoIcon from "../images/icons/logo3.png";
+import logoIcon from "/src/images/icons/logo3.png";
 
 // Adding the audio file
-import myAudio from "../song/Minilogue.mp3"; // Update this path to your actual audio file location
+import myAudio from "/src/song/Minilogue.mp3"; // Update this path to your actual audio file location
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
