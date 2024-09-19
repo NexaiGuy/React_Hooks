@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { tooltipData } from "../../data/menuData"
+import { tooltipData } from "../data/menuData"
 import MenuButton from "../buttons/MenuButton"
 
 export default function MenuTooltip(props) {
@@ -25,7 +25,7 @@ const Wrapper = styled.div`
   padding: 20px;
   position: absolute;
   top: 60px;
-  right: 30px;
+  right: 189px;
   opacity: ${props => (props.isOpen ? 1 : 0)};
   z-index: 1;
   display: grid;

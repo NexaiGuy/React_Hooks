@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export default function BioSection() {
   return (
-    <Wrapper>
+    <Wrapper id="Bio">
       <div>
         <Title>BIO</Title>
         <BioContent>
@@ -70,13 +70,25 @@ const Wrapper = styled.div`
   font-optical-sizing: auto;
   padding-top: 210px;
   padding: 100px 20px;
-`
+
+  @media (max-width: 1024px) {
+    height: auto;
+    padding: 80px 15px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 60px 10px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 40px 5px;
+  }
+`;
 
 const Title = styled.div`
   font-style: normal;
   font-size: 27px;
   font-weight: bold;
-
   margin: 0 auto;
   margin-bottom: 14px;
   padding: 0 36px;
@@ -90,7 +102,7 @@ const Title = styled.div`
   backdrop-filter: blur(40px);
   border-radius: 20px;
   background: linear-gradient(370deg, rgba(187, 86, 112, 0.5), rgba(71, 28, 171, 0.5), rgba(63,176,244, 0.5));
-
+  
   transition: transform 0.6s ease; /* Smooth transition for the hover effect */
   transform-style: preserve-3d; /* Preserve 3D transformation on hover */
 
@@ -102,8 +114,21 @@ const Title = styled.div`
     opacity: 81%;
     transition: 1s;
   }
-`;
 
+  @media (max-width: 1024px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+    max-width: 30%;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 18px;
+    max-width: 50%;
+  }
+`;
 
 const BioContent = styled.div`
   font-size: 18px;
@@ -117,33 +142,86 @@ const BioContent = styled.div`
   box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.3);
   backdrop-filter: blur(40px);
   border-radius: 20px;
-  background: linear-gradient(460deg, rgba(187, 86, 112, 0.4), rgba(63,176,244, 0.3), rgba(71, 28, 171, 0.1), rgba(63,176,244, 0.3),rgba(187, 86, 112, 0.4));
+  background: linear-gradient(460deg, rgba(187, 86, 112, 1), rgba(63,176,244, 0.7), rgba(71, 28, 171, 1), rgba(63,176,244, 1),rgba(187, 86, 112, 0.7));
+
+  @media (max-width: 1024px) {
+    padding: 120px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 80px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 40px;
+  }
 `;
 
 const Name = styled.h1`
   font-size: 33px;
-`
+  font-weight: 600;
+  padding-bottom: 18px;
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 24px;
+  }
+`;
 
 const Expertise = styled.div`
   font-size: 21px;
   line-height: 50px;
   padding-bottom: 18px;
-`
+  font-weight: 900;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+    line-height: 30px;
+  }
+`;
 
 const Description = styled.div`
   font-family: "Open Sans", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-style: italic;
+  font-weight: 1000;
   line-height: 28px;
   padding-bottom: 30px;
-`
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+    line-height: 22px;
+  }
+`;
 
 const Text = styled.p`
-  font-size: 18px;
+  font-size: 20px;
   font-style: italic;
-  font-weight: bold;
+  font-weight: 800;
   line-height: 50px;
-`
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+    line-height: 30px;
+  }
+`;
 
 const List = styled.ul`
   font-family: "Open Sans", sans-serif;
@@ -169,18 +247,21 @@ const List = styled.ul`
     color: white; /* Bullet color */
   }
 
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
+  @media (max-width: 768px) {
+    font-size: 16px;
+    line-height: 34px;
   }
-`
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+    line-height: 32px;
+  }
+`;
 
 const List2 = styled.ul`
   font-family: "Open Sans", sans-serif;
   font-size: 17px;
+  font-weight: 800;
   list-style: none; /* Remove default list styling */
   margin: 0;
   padding: 0;
@@ -202,14 +283,14 @@ const List2 = styled.ul`
     color: white; /* Bullet color */
   }
 
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
+  @media (max-width: 768px) {
+    font-size: 16px;
   }
-`
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
+`;
 
 const List3 = styled.ul`
   font-family: "Open Sans", sans-serif;
@@ -234,12 +315,12 @@ const List3 = styled.ul`
     color: white; /* Bullet color */
   }
 
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
   }
 `;
 
@@ -248,4 +329,12 @@ const Divider = styled.div`
   height: 0.5px;
   background: rgba(255, 255, 255, 0.3);
   margin: 32px auto 60px;
+
+  @media (max-width: 768px) {
+    margin: 32px auto 40px;
+  }
+
+  @media (max-width: 480px) {
+    margin: 32px auto 30px;
+  }
 `;

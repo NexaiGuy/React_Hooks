@@ -5,12 +5,13 @@ import SectionRow from "../rows/SectionRow"
 import { sections } from "../data/sectionData"
 
 function GridSection() {
-    return <Wrapper>
+
+    return <Wrapper id="Skills" >
              <Title>SKILLS</Title>
              <Description>
                  All my skills are explained step-by-step, in a way so that you can easily follow.
              </Description>
-             <Grid>
+             <Grid >
                {sections.map((section, index) => (
                  <SectionRow
                    key={index} 
@@ -37,7 +38,6 @@ const Wrapper = styled.div`
   padding-bottom: 80px;
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
-
 `
 const Title = styled.p`
   font-style: normal;
@@ -75,7 +75,7 @@ const Description = styled.p`
   max-width: 600px;
   font-size: 16px;
   line-height: 33px;
-  color: #98D1E9;
+  color: white;
   margin: 0 auto 20px;
   font-family: "Open Sans", sans-serif;
   width: 100%;

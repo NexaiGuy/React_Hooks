@@ -37,98 +37,193 @@ const Wrapper = styled.div`
   grid-template-columns: 270px auto;
   perspective: 5000;
   perspective-origin: top left;
+  min-height: 1200px;
 
   div {
     perspective-origin: top left;
     perspective: 5000;
-    transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1); /* Add transition here */
-    transform: rotateY(20deg) rotateX(-20deg); /* Initial transform */
+    transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: rotateY(20deg) rotateX(-20deg);
   }
 
   div:hover {
-    transform: rotateY(0deg) rotateX(0deg); /* Reset transform on hover */
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+
+  .mockup1,
+  .mockup2,
+  .mockup3,
+  .mockup4,
+  .mockup5 {
+    transition: all 0.3s ease;
   }
 
   .mockup1 {
     position: absolute;
-    width: 183px;
-    height: 120.179px;
+    width: 180px;
+    height: 120px;
     top: 165px;
-    left: 602px;
-    flex-shrink: 0;
-    border-radius: 16.388px;
-    border: 0.273px solid rgba(255, 255, 255, 0.3);
+    left: 600px;
+    border-radius: 16px;
     background: radial-gradient(
       285.58% 229.57% at 100% 100%,
       rgba(253, 63, 51, 0.6) 0%,
-      rgba(76, 0, 200, 0.6) 45.83%,
       rgba(76, 0, 200, 0.6) 100%
     );
-    box-shadow: 0px 16.388px 32.776px 0px rgba(99, 30, 187, 0.5);
-    backdrop-filter: blur(10.925px);
+    box-shadow: 0px 16px 32px rgba(99, 30, 187, 0.5);
+    backdrop-filter: blur(10px);
+
+    @media (max-width: 1200px) {
+      width: 150px;
+      height: 100px;
+      top: 150px;
+      left: 300px;
+    }
+
+    @media (max-width: 768px) {
+      width: 120px;
+      height: 80px;
+      top: 120px;
+      left: 20px;
+    }
+
+    @media (max-width: 480px) {
+      width: 100px;
+      height: 70px;
+      top: 100px;
+      left: 10px;
+    }
   }
 
   .mockup2 {
     position: absolute;
-    width: 182.937px;
-    height: 120.137px;
+    width: 180px;
+    height: 120px;
     top: 165px;
-    left: 816.05px;
-    flex-shrink: 0;
-    border-radius: 16.382px;
-    border: 0.273px solid rgba(255, 255, 255, 0.5);
-    background: linear-gradient(
-      199deg,
-      #4316db 12.72%,
-      #9076e7 54.49%,
-      #a2eeff 100.01%
-    );
-    box-shadow: 0px 16.388px 32.776px 0px rgba(99, 30, 187, 0.5);
-    backdrop-filter: blur(10.921px);
+    left: 820px;
+    border-radius: 16px;
+    background: linear-gradient(199deg, #4316db 12%, #9076e7 55%, #a2eeff 100%);
+    box-shadow: 0px 16px 32px rgba(99, 30, 187, 0.5);
+    backdrop-filter: blur(10px);
+
+    @media (max-width: 1200px) {
+      width: 150px;
+      height: 100px;
+      top: 150px;
+      left: 500px;
+    }
+
+    @media (max-width: 768px) {
+      width: 120px;
+      height: 80px;
+      top: 120px;
+      left: 160px;
+    }
+
+    @media (max-width: 480px) {
+      width: 100px;
+      height: 70px;
+      top: 100px;
+      left: 120px;
+    }
   }
 
   .mockup3 {
     position: absolute;
-    width: 701.041px;
-    height: 427.881px;
-    top: 225px;
-    left: 639px;
-    flex-shrink: 0;
-    border-radius: 6.846px;
-    border: 0.342px solid rgba(255, 255, 255, 0.2);
+    width: 700px;
+    height: 430px;
+    top: 230px;
+    left: 640px;
+    border-radius: 6px;
     background: rgba(23, 12, 61, 0.5);
-    backdrop-filter: blur(13.692px);
-    box-shadow: 0px 16.388px 32.776px 0px rgba(99, 30, 187, 0.5);
+    backdrop-filter: blur(13px);
+    box-shadow: 0px 16px 32px rgba(99, 30, 187, 0.5);
+
+    @media (max-width: 1200px) {
+      width: 500px;
+      height: 300px;
+      top: 200px;
+      left: 200px;
+    }
+
+    @media (max-width: 768px) {
+      width: 400px;
+      height: 250px;
+      top: 180px;
+      left: 50px;
+    }
+
+    @media (max-width: 480px) {
+      width: 300px;
+      height: 200px;
+      top: 160px;
+      left: 20px;
+    }
   }
 
   .mockup4 {
     position: absolute;
-    width: 401.95px;
-    height: 260.84px;
-    flex-shrink: 0;
-    top: 427.52px;
+    width: 400px;
+    height: 260px;
+    top: 430px;
     left: 1160px;
-    display: inline-flex;
-    padding: 13.692px;
-    gap: 13.692px;
-    border-radius: 13.692px;
-    border: 0.342px solid rgba(255, 255, 255, 0.2);
+    border-radius: 13px;
     background: rgba(39, 20, 62, 0.3);
-    backdrop-filter: blur(13.692px);
-    box-shadow: 0px 16.388px 32.776px 0px rgba(99, 30, 187, 0.5);
+    backdrop-filter: blur(13px);
+    box-shadow: 0px 16px 32px rgba(99, 30, 187, 0.5);
+
+    @media (max-width: 1200px) {
+      width: 300px;
+      height: 200px;
+      top: 350px;
+      left: 600px;
+    }
+
+    @media (max-width: 768px) {
+      width: 250px;
+      height: 150px;
+      top: 300px;
+      left: 200px;
+    }
+
+    @media (max-width: 480px) {
+      width: 200px;
+      height: 120px;
+      top: 250px;
+      left: 20px;
+    }
   }
 
   .mockup5 {
     position: absolute;
     width: 400px;
-    height: 262px;
+    height: 260px;
     left: 750px;
-    top: 428px;
+    top: 430px;
     background: rgba(39, 20, 62, 0.2);
     backdrop-filter: blur(20px);
     border-radius: 8px;
-    box-shadow: 0px 16.388px 32.776px 0px rgba(99, 30, 187, 0.5);
-    flex-shrink: 0;
-    display: inline-flex;
+    box-shadow: 0px 16px 32px rgba(99, 30, 187, 0.5);
+
+    @media (max-width: 1200px) {
+      width: 300px;
+      height: 200px;
+      top: 350px;
+      left: 300px;
+    }
+
+    @media (max-width: 768px) {
+      width: 250px;
+      height: 150px;
+      top: 300px;
+      left: 100px;
+    }
+
+    @media (max-width: 480px) {
+      width: 200px;
+      height: 120px;
+      top: 250px;
+      left: 150px;
+    }
   }
 `;

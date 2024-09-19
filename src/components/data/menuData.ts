@@ -1,17 +1,20 @@
+import coursesIcon from "/src/images/icons/courses.svg";
+import tutorialsIcon from "/src/images/icons/tutorials.svg";
+import pricingIcon from "/src/images/icons/pricing.svg";
+import accountIcon from "/src/images/icons/account.svg";
+import profileIcon from "/src/images/icons/profile.svg";
+import settingsIcon from "/src/images/icons/settings.svg";
+import signoutIcon from "/src/images/icons/signout.svg";
+
 export const menuData = [
-  { title: "Courses", icon: "/images/icons/courses.svg", link: "/courses" },
-  {
-    title: "Tutorials",
-    icon: "/images/icons/tutorials.svg",
-    link: "/tutorials",
-  },
-  { title: "Pricing", icon: "/images/icons/pricing.svg", link: "/pricing" },
-  { title: "", icon: "/images/icons/search.svg", link: "/search" },
-  { title: "", icon: "/images/icons/account.svg", link: "/account" },
-]
+  { title: "Skills", icon: coursesIcon, link: "#Skills" },
+  { title: "Projects", icon: tutorialsIcon, link: "#Projects" },
+  { title: "Bio", icon: pricingIcon, link: "#Bio" },
+  { title: "", icon: accountIcon, link: "/account" },
+];
 
 export const tooltipData = [
-  { title: "Profile", icon: "/images/icons/profile.svg", link: "/profile" },
-  { title: "Settings", icon: "/images/icons/settings.svg", link: "/settings" },
-  { title: "Sign out", icon: "/images/icons/signout.svg", link: "/logout" },
-]
+  { title: "Profile", icon: profileIcon, link: "/" },
+  { title: "Settings", icon: settingsIcon, link: "/" },
+  { title: "Sign out", icon: signoutIcon, link: "/" },
+];

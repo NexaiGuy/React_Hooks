@@ -172,8 +172,9 @@ const fadeIn = keyframes`
 const Wrapper = styled.div`
   position: relative;
   width: 1440px;
-  height: 900px;
+  height: 100px;
   margin: 0 auto;
+  margin-bottom: 100px;
   opacity: 0;
   animation: ${fadeIn};
   animation-duration: 4s;

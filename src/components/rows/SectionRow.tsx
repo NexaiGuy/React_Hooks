@@ -86,7 +86,7 @@ const Description = styled.div`
   font-weight: normal;
   font-size: 15px;
   line-height: 23px;
-  color: #98D1E9;
+  color: white;
 `
 
 const Timestamp = styled.div`

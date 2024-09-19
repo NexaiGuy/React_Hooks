@@ -33,8 +33,8 @@ const Wrapper = styled.div`
   margin: 0 auto;
   text-align: center;
   gap: 12px;
-  padding: 0 20px;
-  padding-bottom: 110px;
+  padding: 100px 20px;
+  padding-bottom: 0;
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
 `
@@ -55,7 +55,7 @@ const Title = styled.p`
   box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.9);
   backdrop-filter: blur(40px);
   border-radius: 20px;
-  background: linear-gradient(370deg, rgba(187, 86, 112, 0.5), rgba(71, 28, 171, 0.5), rgba(63,176,244, 0.5));
+  background: linear-gradient(370deg, rgba(187, 86, 112, 1), rgba(71, 28, 171, 1), rgba(63,176,244, 0.7));
 
   transition: transform 0.6s ease; /* Smooth transition for the hover effect */
   transform-style: preserve-3d; /* Preserve 3D transformation on hover */
@@ -85,7 +85,7 @@ const Description = styled.p`
   box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.3);
   backdrop-filter: blur(40px);
   border-radius: 20px;
-  background: linear-gradient(370deg, rgba(187, 86, 112, 0.5), rgba(71, 28, 171, 0.1), rgba(63,176,244, 0.5));
+  background: linear-gradient(370deg, rgba(187, 86, 112, 1), rgba(71, 28, 171, 1), rgba(63,176,244, 0.9));
 `
 
 const Grid = styled.div`
@@ -94,7 +94,7 @@ const Grid = styled.div`
   gap: 8px;
   width: 100%;
   padding: 20px;
-  background: linear-gradient(370deg, rgba(187, 86, 112, 0.5), rgba(71, 28, 171, 0.1), rgba(63,176,244, 0.5));
+  background: linear-gradient(370deg, rgba(187, 86, 112, 1), rgba(71, 28, 171, 1), rgba(63,176,244, 0.7));
   border: 0.5px solid rgba(255, 255, 255, 0.6);
   box-sizing: border-box;
   box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.3);
