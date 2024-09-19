@@ -14,7 +14,7 @@ export const menuData = [
 ];
 
 export const tooltipData = [
-  { title: "Profile", icon: profileIcon, link: "/" },
-  { title: "Settings", icon: settingsIcon, link: "/" },
-  { title: "Sign out", icon: signoutIcon, link: "/" },
+  { title: "Skills", icon: profileIcon, link: "Skills" },
+  { title: "Projects", icon: settingsIcon, link: "#Projects" },
+  { title: "Bio", icon: signoutIcon, link: "#Bio" },
 ];
