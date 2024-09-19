@@ -55,6 +55,7 @@ const IndexPage = () => {
   return (
     <Wrapper id="my-background">
       <Header />
+      <ContainerWrapper>
       <HeroWrapper id="my-background">
         <CourseCard />
         <TextWrapper>
@@ -103,6 +104,7 @@ const IndexPage = () => {
       <FlutterWrapper width={width}>
         <FlutterBuild />
       </FlutterWrapper>
+      </ContainerWrapper>
     </Wrapper>
   );
 };
@@ -114,7 +116,6 @@ const Wrapper = styled.div`
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
   height: 10000px;
-  overflow: auto;
 
   @keyframes HeroAnimation {
     0% {
@@ -127,6 +128,10 @@ const Wrapper = styled.div`
     }
   }
 `;
+
+const ContainerWrapper = styled.div`
+  overflow: hidden;
+`
 
 const ContentWrapper = styled.div`
   overflow: hidden;
