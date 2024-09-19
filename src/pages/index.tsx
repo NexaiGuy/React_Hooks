@@ -130,7 +130,7 @@ const Wrapper = styled.div`
 `;
 
 const ContainerWrapper = styled.div`
-  overflow: hidden;
+  overflow: visible;
 `
 
 const ContentWrapper = styled.div`
