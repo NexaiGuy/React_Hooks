@@ -141,7 +141,7 @@ const TextWrapper = styled.div`
   position: relative;
   display: grid;
   gap: 20px;
-  margin-top: -182px;
+  margin-top: -142px;
   margin-left: 20px;
 
   @media (max-width: 768px) {
@@ -163,9 +163,10 @@ const HeroWrapper = styled.div`
   max-width: 1234px;
   grid-template-columns: 360px auto;
   gap: 60px;
-  padding: 220px 20px 0px;
+  padding: 160px 20px 0px;
   justify-content: center;
   margin: 0 auto;
+  overflow: hidden;
 
   .courseCard {
     margin-top: 74px;
@@ -232,7 +233,6 @@ const LogoCon2 = styled.div`
 
 const LogoWrap = styled.div`
   display: flex;
-  margin-top: 100px;
   margin-left: -28px;
 
   @media (max-width: 1920px) {
@@ -258,6 +258,7 @@ const Title = styled.h1`
   max-width: 500px;
   font-size: 60px;
   line-height: 72px;
+  margin-top: -40px;
   color: #ffffff;
   mix-blend-mode: normal;
   text-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
@@ -296,6 +297,11 @@ const Caption = styled.p`
   color: #96D5E0;
   box-shadow: 0px 0px 105px 45px rgba(251, 255, 138, 0.009);
   animation: HeroAnimation 3s ease;
+  transition: transform 0.5s ease;
+
+  &:hover {
+    transform: translateY(-7px);
+  }
 
   @media (max-width: 768px) {
     font-size: 12px;
@@ -397,7 +403,7 @@ const Divider3 = styled.div`
   width: 300px;
   height: 0.5px;
   background: rgba(255, 255, 255, 0.3);
-  margin: 0px auto 32px;
+  margin: 180px auto 32px;
 
   @media (max-width: 768px) {
     margin: 60px auto 20px;

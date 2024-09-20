@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Credit from "/src/images/icons/credit.svg";
+import Credit from "/src/images/icons/check.svg";
 import IconRing from "/src/images/icons/icon-ring.svg";
 
 function PurchaseButton() {
@@ -28,7 +28,7 @@ export default PurchaseButton;
 const Wrapper = styled.div`
   width: 280px;
   height: 77px;
-  margin-top: 11px;
+  margin-top: 40px;
   padding: 12px;
   background: linear-gradient(180deg, #ffffff 0%, #d9dfff 100%);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 20px 40px rgba(23, 0, 102, 0.2),
@@ -91,7 +91,7 @@ const Ring = styled.img`
 const IconWrapper = styled.div`
   width: 45px;
   height: 45px;
-  background: linear-gradient(200.44deg, #4316db 13.57%, #9076e7 98.38%);
+  background: linear-gradient(200.44deg, #4316db 4.57%, #3EB0F3 98.38%);
   border-radius: 50%;
   display: grid;
   justify-content: center;

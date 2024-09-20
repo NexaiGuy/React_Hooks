@@ -65,6 +65,7 @@ const Wrapper = styled.div`
   width: 100%;
   height: 1800px;
   margin: 0 auto;
+  margin-top: 120px;
   text-align: center;
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;

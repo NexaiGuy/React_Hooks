@@ -87,7 +87,6 @@ export default function Header() {
         <MenuTooltip isOpen={isOpen} />
       </div>
 
-      {/* Audio player with autoplay and volume control */}
       <AudioPlayer>
         <audio ref={audioRef} controls>
           <source src={myAudio} type="audio/mpeg" />
@@ -98,7 +97,6 @@ export default function Header() {
   );
 }
 
-// Styled components
 const Wrapper = styled.div`
   position: sticky;
   top: 20px;
@@ -106,7 +104,7 @@ const Wrapper = styled.div`
   grid-template-columns: 44px auto;
   width: 100%;
   justify-content: space-between;
-  padding-left: 17.3%;
+  padding-left: 19.4%;
   padding-right: 19.22%;
   align-items: center;
   z-index: 1000;
@@ -164,7 +162,7 @@ const MyLink = styled(Link)`
 const AudioPlayer = styled.div`
   margin-top: 20px;
   audio {
-    width: 65%;
-    margin-left: 44px;
+    width: 55%;
+    margin-left: 188px;
   }
 `;

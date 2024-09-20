@@ -37,7 +37,7 @@ const Wrapper = styled.div`
   grid-template-columns: 270px auto;
   perspective: 5000;
   perspective-origin: top left;
-  min-height: 1200px;
+  min-height: 630px;
 
   div {
     perspective-origin: top left;
