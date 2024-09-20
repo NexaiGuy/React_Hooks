@@ -51,7 +51,7 @@ const Title = styled.p`
   margin: 0 auto;
   max-width: 100%;
   padding: 0 36px;
-  border: 0.5px solid rgba(255, 255, 255, 0.6);
+  border: 0.5px solid black;
   box-sizing: border-box;
   box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.9);
   backdrop-filter: blur(40px);
@@ -80,7 +80,7 @@ const Description = styled.p`
   font-family: "Open Sans", sans-serif;
   width: 100%;
   padding: 20px;
-  border: 0.5px solid rgba(255, 255, 255, 0.6);
+  border: 0.5px solid black;
   box-sizing: border-box;
   box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.3);
   backdrop-filter: blur(40px);
@@ -95,7 +95,7 @@ const Grid = styled.div`
   gap: 8px;
   width: 100%;
   padding: 20px;
-  border: 0.5px solid rgba(255, 255, 255, 0.6);
+  border: 0.5px solid black;
   box-sizing: border-box;
   box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.3);
   backdrop-filter: blur(40px);

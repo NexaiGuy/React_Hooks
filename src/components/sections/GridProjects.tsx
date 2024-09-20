@@ -50,7 +50,7 @@ const Title = styled.p`
   margin: 0 auto;
   max-width: 100%;
   padding: 0 36px;
-  border: 0.5px solid rgba(255, 255, 255, 0.6);
+  border: 0.5px solid black;
   box-sizing: border-box;
   box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.9);
   backdrop-filter: blur(40px);
@@ -80,7 +80,7 @@ const Description = styled.p`
 
   width: 52%;
   padding: 20px;
-  border: 0.5px solid rgba(255, 255, 255, 0.6);
+  border: 0.5px solid black;
   box-sizing: border-box;
   box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.3);
   backdrop-filter: blur(40px);
@@ -95,7 +95,7 @@ const Grid = styled.div`
   width: 100%;
   padding: 20px;
   background: linear-gradient(370deg, rgba(187, 86, 112, 1), rgba(71, 28, 171, 1), rgba(63,176,244, 0.7));
-  border: 0.5px solid rgba(255, 255, 255, 0.6);
+  border: 0.5px solid black;
   box-sizing: border-box;
   box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.3);
   backdrop-filter: blur(40px);

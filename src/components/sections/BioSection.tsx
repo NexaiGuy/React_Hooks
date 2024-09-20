@@ -98,7 +98,7 @@ const Title = styled.div`
   line-height: 130%;
   text-transform: uppercase;
   color: #3FB1F4;
-  border: 0.5px solid rgba(255, 255, 255, 0.6);
+  border: 0.5px solid black;
   box-sizing: border-box;
   box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.9);
   backdrop-filter: blur(40px);
@@ -139,7 +139,7 @@ const BioContent = styled.div`
   margin: 0 auto;
   text-align: start;
   padding: 240px;
-  border: 0.5px solid rgba(255, 255, 255, 0.6);
+  border: 0.5px solid black;
   box-sizing: border-box;
   box-shadow: 0px 50px 100px rgba(34, 79, 169, 0.3);
   backdrop-filter: blur(40px);

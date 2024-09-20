@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import Illu from "/src/images/illustrations/illustration-1.jpg";
+import Illu from "/src/images/illustrations/illustration-1.png";
 
 function CourseCard(props) {
   return (
