@@ -76,6 +76,6 @@ const Illustration = styled.img`
   @media (max-width: 480px) {
     width: 280px;
     height: 300px; /* Adjust size for mobile */
-    margin-bottom: 120px;
+    margin-bottom: 100px;
   }
 `;
