@@ -99,7 +99,7 @@ export default function Header() {
 
 const Wrapper = styled.div`
   position: sticky;
-  top: 20px;
+  top: 5px;
   display: grid;
   grid-template-columns: 44px auto;
   width: 100%;

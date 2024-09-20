@@ -166,7 +166,6 @@ const HeroWrapper = styled.div`
   padding: 240px 20px 0px;
   justify-content: center;
   margin: 0 auto;
-  overflow: hidden;
 
   .courseCard {
     margin-top: 74px;
