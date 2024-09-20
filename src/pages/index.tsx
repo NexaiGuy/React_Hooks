@@ -163,7 +163,7 @@ const HeroWrapper = styled.div`
   max-width: 1234px;
   grid-template-columns: 360px auto;
   gap: 60px;
-  padding: 160px 20px 0px;
+  padding: 240px 20px 0px;
   justify-content: center;
   margin: 0 auto;
   overflow: hidden;

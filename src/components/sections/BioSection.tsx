@@ -1,5 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
+import github from "/src/images/logos/github.png";
 
 export default function BioSection() {
   return (
@@ -47,7 +48,7 @@ export default function BioSection() {
             <Text>Connect with me:</Text>
             <List3>
               <ul>
-                <a href="https://github.com/NexaiGuy" target="_blank"><li>GitHub: Discover my repositories and projects.</li></a>
+                <a href="https://github.com/NexaiGuy" target="_blank"><img src={github} alt="github" /><li>GitHub: Discover my repositories and projects.</li></a>
                 <li>For inquiries: blancaflorkevin@gmail.com</li>
               </ul>
             </List3>
@@ -298,7 +299,6 @@ const List3 = styled.ul`
   font-size: 17px;
   list-style: none; /* Remove default list styling */
   margin: 0;
-  padding: 0;
   display: flex; /* Flexbox layout for horizontal items */
   align-items: center;
   line-height: 27px;
@@ -306,11 +306,11 @@ const List3 = styled.ul`
   li {
     position: relative;
     margin-right: 10px; /* Space between items */
-    padding-left: 1.2em; /* Space for the bullet */
+    padding-left: 3.4em; /* Space for the bullet */
+    line-height: 38px;
   }
 
   li::before {
-    content: '●'; /* Custom bullet using a circle character */
     position: absolute;
     left: 0;
     color: white; /* Bullet color */
@@ -322,6 +322,12 @@ const List3 = styled.ul`
 
   @media (max-width: 480px) {
     font-size: 14px;
+  }
+
+  img {
+    width: 36px;
+    float: left;
+    margin-right: 20px;
   }
 `;
 

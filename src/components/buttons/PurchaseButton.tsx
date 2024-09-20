@@ -10,16 +10,22 @@ function PurchaseButton() {
   };
 
   return (
+    <a href="#click-projects">
     <Wrapper onClick={handleClick}>
+      
       <IconWrapper>
         <Ring src={IconRing} alt="Icon Ring" />
         <Icon src={Credit} alt="Credit Icon" />
       </IconWrapper>
       <TextWrapper>
         <Title>Go Next Level</Title>
-        <Subtitle>Click to Scroll Down</Subtitle>
+        
+          <Subtitle>Scroll Down</Subtitle>
+        
       </TextWrapper>
+      
     </Wrapper>
+    </a>
   );
 }
 
