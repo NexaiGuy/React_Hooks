@@ -170,7 +170,15 @@ const AudioPlayer = styled.div`
     height: 50px;
 
     @media (max-width: 480px) {
-    overflow: hidden;
-  }
+    
+    z-index: 1000;
+    width: 20%;
+    }
+
+    @media (max-width: 300px) {
+    
+    z-index: 1000;
+    width: 20%;
+    }
   }
 `;
