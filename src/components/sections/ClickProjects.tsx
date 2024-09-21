@@ -56,6 +56,12 @@ const Wrapper = styled.div`
   .mockup4,
   .mockup5 {
     transition: all 0.3s ease;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: inherit;
+    }
   }
 
   .mockup1 {
@@ -72,27 +78,6 @@ const Wrapper = styled.div`
     );
     box-shadow: 0px 16px 32px rgba(99, 30, 187, 0.5);
     backdrop-filter: blur(10px);
-
-    @media (max-width: 1200px) {
-      width: 150px;
-      height: 100px;
-      top: 150px;
-      left: 300px;
-    }
-
-    @media (max-width: 768px) {
-      width: 120px;
-      height: 80px;
-      top: 120px;
-      left: 20px;
-    }
-
-    @media (max-width: 480px) {
-      width: 100px;
-      height: 70px;
-      top: 100px;
-      left: 10px;
-    }
   }
 
   .mockup2 {
@@ -105,27 +90,6 @@ const Wrapper = styled.div`
     background: linear-gradient(199deg, #4316db 12%, #9076e7 55%, #a2eeff 100%);
     box-shadow: 0px 16px 32px rgba(99, 30, 187, 0.5);
     backdrop-filter: blur(10px);
-
-    @media (max-width: 1200px) {
-      width: 150px;
-      height: 100px;
-      top: 150px;
-      left: 500px;
-    }
-
-    @media (max-width: 768px) {
-      width: 120px;
-      height: 80px;
-      top: 120px;
-      left: 160px;
-    }
-
-    @media (max-width: 480px) {
-      width: 100px;
-      height: 70px;
-      top: 100px;
-      left: 120px;
-    }
   }
 
   .mockup3 {
@@ -138,27 +102,6 @@ const Wrapper = styled.div`
     background: rgba(23, 12, 61, 0.5);
     backdrop-filter: blur(13px);
     box-shadow: 0px 16px 32px rgba(99, 30, 187, 0.5);
-
-    @media (max-width: 1200px) {
-      width: 500px;
-      height: 300px;
-      top: 200px;
-      left: 200px;
-    }
-
-    @media (max-width: 768px) {
-      width: 400px;
-      height: 250px;
-      top: 180px;
-      left: 50px;
-    }
-
-    @media (max-width: 480px) {
-      width: 150px;
-      height: 200px;
-      top: 160px;
-      left: 20px;
-    }
   }
 
   .mockup4 {
@@ -171,27 +114,6 @@ const Wrapper = styled.div`
     background: rgba(39, 20, 62, 0.3);
     backdrop-filter: blur(13px);
     box-shadow: 0px 16px 32px rgba(99, 30, 187, 0.5);
-
-    @media (max-width: 1200px) {
-      width: 300px;
-      height: 200px;
-      top: 350px;
-      left: 600px;
-    }
-
-    @media (max-width: 768px) {
-      width: 250px;
-      height: 150px;
-      top: 300px;
-      left: 200px;
-    }
-
-    @media (max-width: 480px) {
-      width: 200px;
-      height: 120px;
-      top: 250px;
-      left: 20px;
-    }
   }
 
   .mockup5 {
@@ -204,26 +126,105 @@ const Wrapper = styled.div`
     backdrop-filter: blur(20px);
     border-radius: 8px;
     box-shadow: 0px 16px 32px rgba(99, 30, 187, 0.5);
+  }
 
-    @media (max-width: 1200px) {
+  /* Media Queries for responsiveness */
+  @media (max-width: 1200px) {
+    .mockup1 {
+      width: 150px;
+      height: 100px;
+      top: 150px;
+      left: 300px;
+    }
+    .mockup2 {
+      width: 150px;
+      height: 100px;
+      top: 150px;
+      left: 500px;
+    }
+    .mockup3 {
+      width: 500px;
+      height: 300px;
+      top: 200px;
+      left: 200px;
+    }
+    .mockup4 {
+      width: 300px;
+      height: 200px;
+      top: 350px;
+      left: 600px;
+    }
+    .mockup5 {
       width: 300px;
       height: 200px;
       top: 350px;
       left: 300px;
     }
+  }
 
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
+    .mockup1 {
+      width: 120px;
+      height: 80px;
+      top: 120px;
+      left: 20px;
+    }
+    .mockup2 {
+      width: 120px;
+      height: 80px;
+      top: 120px;
+      left: 160px;
+    }
+    .mockup3 {
+      width: 400px;
+      height: 250px;
+      top: 180px;
+      left: 50px;
+    }
+    .mockup4 {
+      width: 250px;
+      height: 150px;
+      top: 300px;
+      left: 200px;
+    }
+    .mockup5 {
       width: 250px;
       height: 150px;
       top: 300px;
       left: 100px;
     }
+  }
 
-    @media (max-width: 480px) {
-      width: 200px;
+  @media (max-width: 480px) {
+    .mockup1 {
+      width: 80px;
+      height: 60px;
+      top: 90px;
+      left: 10px;
+    }
+    .mockup2 {
+      width: 80px;
+      height: 60px;
+      top: 90px;
+      left: 110px;
+    }
+    .mockup3 {
+      width: 250px;
+      height: 150px;
+      top: 140px;
+      left: 10px;
+    }
+    .mockup4 {
+      width: 180px;
       height: 120px;
-      top: 250px;
-      left: 150px;
+      top: 220px;
+      left: 10px;
+    }
+    .mockup5 {
+      width: 180px;
+      height: 120px;
+      top: 220px;
+      left: 200px;
     }
   }
 `;

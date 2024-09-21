@@ -130,7 +130,7 @@ const Wrapper = styled.div`
 `;
 
 const ContainerWrapper = styled.div`
-  overflow: hidden;
+  
 `
 
 const ContentWrapper = styled.div`
@@ -163,7 +163,7 @@ const HeroWrapper = styled.div`
   max-width: 1234px;
   grid-template-columns: 360px auto;
   gap: 60px;
-  padding: 240px 20px 0px;
+  padding: 140px 20px 0px;
   justify-content: center;
   margin: 0 auto;
 

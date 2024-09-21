@@ -1,7 +1,7 @@
-import React, { useRef } from "react"
-import styled, { keyframes } from "styled-components"
+import React, { useRef } from "react";
+import styled, { keyframes } from "styled-components";
 
-import useMousePosition from "../../hooks/useMousePosition"
+import useMousePosition from "../../hooks/useMousePosition";
 
 import man from "/src/images/components/flutter/man.svg";
 import iphone from "/src/images/components/flutter/iphone.png";
@@ -11,8 +11,8 @@ import background2 from "/src/images/components/flutter/background2.svg";
 import background1 from "/src/images/components/flutter/background1.svg";
 
 function FlutterBuild() {
-  const ref = useRef(null)
-  const [centerX, centerY, bind] = useMousePosition(ref)
+  const ref = useRef(null);
+  const [centerX, centerY, bind] = useMousePosition(ref);
 
   return (
     <Wrapper ref={ref} {...bind}>
@@ -137,42 +137,23 @@ function FlutterBuild() {
             `,
           }}
         />
-        <img
-          className="background2"
-          src={background2}
-          style={{
-            transform: `
-          translateX(${centerX / 6}px)
-          translateY(${centerY / 6}px)
-            `,
-          }}
-        />
-        <img
-          className="background1"
-          src={background1}
-          style={{
-            transform: `
-          translateX(${centerX / 7}px)
-          translateY(${centerY / 7}px)
-            `,
-          }}
-        />
       </div>
     </Wrapper>
-  )
+  );
 }
 
-export default FlutterBuild
+export default FlutterBuild;
 
 const fadeIn = keyframes`
   from { opacity: 0; }
   to { opacity: 1; }
-`
+`;
 
 const Wrapper = styled.div`
   position: relative;
-  width: 1440px;
-  height: 100px;
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
   margin: 0 auto;
   margin-bottom: 100px;
   opacity: 0;
@@ -185,30 +166,37 @@ const Wrapper = styled.div`
     pointer-events: none;
   }
 
+  .shape,
+  .genericpanel,
+  .man,
+  .phone-left,
+  .phone-right,
+  .circle1,
+  .circle2,
+  .circle3,
+  .circle4,
+  .circle5,
+  .circle6 {
+    position: absolute;
+  }
+
   .shape {
     width: 200px;
     height: 50px;
     border-radius: 20px 10px;
-    border: 1px solid;
-    border-color: rgba(255, 255, 255, 0.5);
-    transform: skew(33deg) rotateZ(4deg);
-    transform-origin: top left;
-    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.5);
     top: 228px;
     left: 277px;
     background: rgba(255, 198, 194, 0.4);
     backdrop-filter: blur(40px);
     z-index: 6;
   }
+
   .genericpanel {
     width: 144px;
     height: 30px;
     border-radius: 15px 10px;
-    border: 1px solid;
-    border-color: rgba(255, 255, 255, 0.5);
-    transform: skew(33deg) rotateZ(4deg);
-    transform-origin: top left;
-    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(40px);
     z-index: 6;
   }
@@ -237,113 +225,37 @@ const Wrapper = styled.div`
     left: 438px;
     background: rgba(255, 198, 194, 0.4);
   }
-  .shape7 {
-    width: 112px;
-    height: 2px;
-    border: 1px solid;
-    border-color: rgba(255, 255, 255, 0.5);
-    transform: skew(33deg) rotateZ(-2.5deg);
-    transform-origin: top left;
-    position: absolute;
-    top: 484px;
-    left: 793px;
-    background: rgba(255, 198, 194, 0.4);
-    backdrop-filter: blur(40px);
-    z-index: 6;
-  }
-  .shape8 {
-    width: 103px;
-    height: 16px;
-    position: absolute;
-    top: 499px;
-    left: 790px;
-    border: 1px solid;
-    border-radius: 15px 10px;
-    border-color: rgba(255, 255, 255, 0.5);
-    transform: skew(-33deg) rotateZ(-2.5deg);
-    transform-origin: top left;
-    background: rgba(255, 198, 194, 0.4);
-    backdrop-filter: blur(40px);
-    z-index: 6;
-  }
-  .shape9 {
-    width: 79px;
-    height: 16px;
-    position: absolute;
-    top: 523px;
-    left: 782px;
-    border: 1px solid;
-    border-color: rgba(255, 255, 255, 0.5);
-    transform: skew(-33deg) rotateZ(-2.5deg);
-    transform-origin: top left;
-    background: rgba(255, 198, 194, 0.4);
-    backdrop-filter: blur(40px);
-    z-index: 6;
-  }
-  .shapes {
-    margin-left: 150px;
-    z-index: 8;
-    div {
-      backdrop-filter: blur(40px) brightness(300%) saturate(200%);
-    }
-  }
 
+  /* Positioning for man and phones */
   .man {
-    position: absolute;
     top: 110px;
     left: 500px;
     z-index: 7;
   }
   .phone-left {
-    width: 427.47px;
-    height: 465.28px;
-    position: absolute;
+    width: 427px;
+    height: 465px;
     top: 168px;
     left: 198px;
     z-index: 1;
   }
   .phone-right {
-    width: 427.47px;
-    height: 465.96px;
-    position: absolute;
+    width: 427px;
+    height: 465px;
     top: 152px;
     left: 705px;
     z-index: 2;
   }
-  .layout-left {
-    position: absolute;
-    top: 168px;
-    left: 200px;
-    z-index: 4;
-  }
-  .layout-right {
-    position: absolute;
-    top: 200px;
-    left: 700px;
-    z-index: 3;
-  }
-  .background1 {
-    position: absolute;
-    top: 80px;
-    left: 29px;
-    z-index: -1;
-  }
-  .background2 {
-    position: absolute;
-    top: 0px;
-    left: 199px;
-    z-index: 0;
-    mix-blend-mode: darken;
-  }
+
   .background3 {
-    position: absolute;
     top: -123px;
     left: 239px;
     z-index: 1;
     mix-blend-mode: overlay;
   }
+
+  /* Circles */
   .circle1 {
-    position: absolute;
     top: 93px;
     left: 552px;
     width: 55px;
@@ -353,7 +265,6 @@ const Wrapper = styled.div`
     opacity: 0.2;
   }
   .circle2 {
-    position: absolute;
     top: 8px;
     left: 671px;
     width: 228px;
@@ -363,7 +274,6 @@ const Wrapper = styled.div`
     opacity: 0.2;
   }
   .circle3 {
-    position: absolute;
     top: 96px;
     left: 838px;
     width: 104px;
@@ -373,7 +283,6 @@ const Wrapper = styled.div`
     opacity: 0.2;
   }
   .circle4 {
-    position: absolute;
     top: 23px;
     left: 1070px;
     width: 118px;
@@ -383,7 +292,6 @@ const Wrapper = styled.div`
     opacity: 0.2;
   }
   .circle5 {
-    position: absolute;
     top: 624px;
     left: 852px;
     width: 162px;
@@ -393,7 +301,6 @@ const Wrapper = styled.div`
     opacity: 0.2;
   }
   .circle6 {
-    position: absolute;
     top: 714px;
     left: 965px;
     width: 79px;
@@ -403,46 +310,76 @@ const Wrapper = styled.div`
     opacity: 0.2;
   }
 
-  .man {
-    transform: translateY(-100px) translateX(-100px);
+  /* Media Queries for responsiveness */
+  @media (max-width: 1200px) {
+    .shape, .genericpanel, .man, .phone-left, .phone-right, .circle1, .circle2, .circle3, .circle4, .circle5, .circle6 {
+      transform: scale(0.9);
+    }
   }
-  .phone-left {
-    transform: translateY(100px);
+
+  @media (max-width: 992px) {
+    .shape, .genericpanel, .man, .phone-left, .phone-right, .circle1, .circle2, .circle3, .circle4, .circle5, .circle6 {
+      transform: scale(0.75);
+    }
   }
-  .phone-right {
-    transform: translateY(-100px);
+
+  @media (max-width: 768px) {
+    .shape, .genericpanel, .man, .phone-left, .phone-right, .circle1, .circle2, .circle3, .circle4, .circle5, .circle6 {
+      transform: scale(0.6);
+    }
+
+    .man {
+      left: 300px;
+    }
+    .phone-left {
+      width: 250px;
+      left: 100px;
+    }
+    .phone-right {
+      width: 250px;
+      left: 450px;
+    }
   }
-  .layout-left {
-    transform: translateY(50px) translateX(50px);
+
+  @media (max-width: 576px) {
+    .shape, .genericpanel, .man, .phone-left, .phone-right, .circle1, .circle2, .circle3, .circle4, .circle5, .circle6 {
+      transform: scale(0.45);
+    }
+
+    .man {
+      left: 100px;
+    }
+    .phone-left {
+      width: 180px;
+      left: 50px;
+    }
+    .phone-right {
+      width: 180px;
+      left: 250px;
+    }
+
+    .background1,
+    .background2,
+    .background3 {
+      display: none;
+    }
   }
-  .layout-right {
-    transform: translateY(-100px) translateX(-50px);
+
+  @media (max-width: 375px) {
+    .shape, .genericpanel, .man, .phone-left, .phone-right, .circle1, .circle2, .circle3, .circle4, .circle5, .circle6 {
+      transform: scale(0.3);
+    }
+
+    .man {
+      left: 50px;
+    }
+    .phone-left {
+      width: 120px;
+      left: 20px;
+    }
+    .phone-right {
+      width: 120px;
+      left: 150px;
+    }
   }
-  .background1 {
-    transform: translateY(40px);
-  }
-  .background2 {
-    transform: translateY(-40px);
-  }
-  .background3 {
-    transform: translatex(-50px) translateY(50px);
-  }
-  .circle1 {
-    transform: translatex(-50px) translateY(30px);
-  }
-  .circle2 {
-    transform: translatex(50px) translateY(50px);
-  }
-  .circle3 {
-    transform: translatex(100px) translateY(-50px);
-  }
-  .circle4 {
-    transform: translatex(50px) translateY(50px);
-  }
-  .circle5 {
-    transform: translatex(50px) translateY(50px);
-  }
-  .circle6 {
-    transform: translatex(50px) translateY(-50px);
-  }
-`
+`;
