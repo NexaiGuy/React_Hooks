@@ -100,9 +100,6 @@ const IndexPage = () => {
       </div>
       <Divider3 />
       <BioSection />
-      <FlutterWrapper width={width}>
-        
-      </FlutterWrapper>
       </ContainerWrapper>
     </Wrapper>
   );
@@ -346,23 +343,6 @@ const SmallText = styled.p`
 
   @media (max-width: 480px) {
     font-size: 11px;
-  }
-`;
-
-const FlutterWrapper = styled.div`
-  margin: 690px auto;
-
-  @media (max-width: 1440px) {
-    transform-origin: top left;
-    transform: scale(${props => props.width / 1440});
-  }
-
-  @media (max-width: 768px) {
-    margin-top: 500px;
-  }
-
-  @media (max-width: 480px) {
-    margin-top: 400px;
   }
 `;
 
