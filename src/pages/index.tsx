@@ -8,7 +8,6 @@ import 'animate.css';
 import Header from "/src/components/header"; 
 
 import CourseCard from "../components/cards/CourseCard";
-import FlutterBuild from "../components/builds/FlutterBuild";
 import GridSection from "../components/sections/GridSection";
 import ClickProjects from "../components/sections/ClickProjects";
 import GridProjects from "../components/sections/GridProjects";
@@ -102,7 +101,7 @@ const IndexPage = () => {
       <Divider3 />
       <BioSection />
       <FlutterWrapper width={width}>
-        <FlutterBuild />
+        
       </FlutterWrapper>
       </ContainerWrapper>
     </Wrapper>
