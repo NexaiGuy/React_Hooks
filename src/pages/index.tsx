@@ -126,7 +126,7 @@ const Wrapper = styled.div`
 `;
 
 const ContainerWrapper = styled.div`
-  
+  overflow: hidden;
 `
 
 const ContentWrapper = styled.div`
