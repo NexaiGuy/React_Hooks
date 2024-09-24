@@ -1,28 +1,34 @@
 import * as React from "react";
 import styled from "styled-components";
-import m1 from "/src/images/illustrations/mockup1.svg";
-import m2 from "/src/images/illustrations/mockup2.svg";
-import m3 from "/src/images/illustrations/mockup3.svg";
-import m4 from "/src/images/illustrations/mockup4.svg";
-import m5 from "/src/images/illustrations/mockup5.svg";
+// import m1 from "/src/images/illustrations/mockup1.svg";
+// import m2 from "/src/images/illustrations/mockup2.svg";
+import m3 from "/src/images/illustrations/mockup3.png";
+import m4 from "/src/images/illustrations/mockup4.png";
+import m5 from "/src/images/illustrations/mockup5.png";
 
 export default function ClickProjects() {
   return (
     <Wrapper>
-      <div className="mockup1">
+  {/* <div className="mockup1">
         <img src={m1} alt="Mockup 1" />
       </div>
       <div className="mockup2">
         <img src={m2} alt="Mockup 2" />
-      </div>
+      </div> */}
       <div className="mockup3" id="mock">
-        <img src={m3} alt="Mockup 3" />
+        <a href="https://bikera.org/" target="_blank">
+          <img src={m3} alt="Mockup 3" />
+        </a>
       </div>
       <div className="mockup4">
-        <img src={m4} alt="Mockup 4" />
+        <a href="https://master--portfolionexai.netlify.app/" target="_blank">
+          <img src={m4} alt="Mockup 4" />
+        </a>
       </div>
       <div className="mockup5">
-        <img src={m5} alt="Mockup 5" />
+        <a href="https://portfolio-kevin-blancaflor.netlify.app" target="_blank">
+          <img src={m5} alt="Mockup 5" />
+        </a>
       </div>
     </Wrapper>
   );
