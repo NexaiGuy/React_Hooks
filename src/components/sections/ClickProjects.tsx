@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 // import m1 from "/src/images/illustrations/mockup1.svg";
-// import m2 from "/src/images/illustrations/mockup2.svg";
+import m2 from "/src/images/illustrations/mockup2.png";
 import m3 from "/src/images/illustrations/mockup3.png";
 import m4 from "/src/images/illustrations/mockup4.png";
 import m5 from "/src/images/illustrations/mockup5.png";
@@ -11,18 +11,20 @@ export default function ClickProjects() {
     <Wrapper>
   {/* <div className="mockup1">
         <img src={m1} alt="Mockup 1" />
-      </div>
-      <div className="mockup2">
-        <img src={m2} alt="Mockup 2" />
       </div> */}
+      <div className="mockup2">
+       <a href="https://master--portfolionexai.netlify.app/" target="_blank"> 
+        <img src={m4} alt="Mockup 2" />
+       </a>
+      </div>
       <div className="mockup3" id="mock">
-        <a href="https://bikera.org/" target="_blank">
-          <img src={m3} alt="Mockup 3" />
+        <a href="https://4pple-from-scratch.netlify.app/" target="_blank">
+          <img src={m2} alt="Mockup 3" />
         </a>
       </div>
       <div className="mockup4">
-        <a href="https://master--portfolionexai.netlify.app/" target="_blank">
-          <img src={m4} alt="Mockup 4" />
+        <a href="https://bikera.org/" target="_blank">
+          <img src={m3} alt="Mockup 4" />
         </a>
       </div>
       <div className="mockup5">
@@ -114,7 +116,7 @@ const Wrapper = styled.div`
     position: absolute;
     width: 400px;
     height: 260px;
-    top: 430px;
+    top: 470px;
     left: 1160px;
     border-radius: 13px;
     background: rgba(39, 20, 62, 0.3);
@@ -127,7 +129,7 @@ const Wrapper = styled.div`
     width: 400px;
     height: 260px;
     left: 750px;
-    top: 430px;
+    top: 470px;
     background: rgba(39, 20, 62, 0.2);
     backdrop-filter: blur(20px);
     border-radius: 8px;
